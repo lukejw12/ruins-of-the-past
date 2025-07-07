@@ -1,2 +1,4 @@
-kill @e[type=item,nbt={Item:{id:"minecraft:stone",count:1,components:{"minecraft:custom_data":{gui_filler:1b}}}}]
-execute as @a at @s run function unknown_pack_name:sub/player_ticks
+function unknown_pack_name:active/table/fill_gui_slots
+execute unless block ~ ~ ~ barrel run kill @s
+execute unless score #stop temp matches 1.. if items block ~ ~ ~ container.10 *[item_model="unknown_pack_name:items/ancient_tablet"] if items block ~ ~ ~ container.11 spyglass run function unknown_pack_name:active/table/recipes/ancient_tablet_valid
+execute if items block ~ ~ ~ container.10 *[item_model="unknown_pack_name:items/ancient_tablet"] if items block ~ ~ ~ container.11 spyglass if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data".discovery_level run function unknown_pack_name:active/table/discovery/check_discovery_click
