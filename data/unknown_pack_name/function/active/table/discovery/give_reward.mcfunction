@@ -1,0 +1,2 @@
+execute at @p[distance=..10] run summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1},PickupDelay:0,Motion:[0.0,0.1,0.0]}
+tellraw @p[distance=..10] [{"text":"Discovery Complete! Type: "},{"storage":"unknown_pack_name:discovery","nbt":"type"},{"text":", Subtype: "},{"storage":"unknown_pack_name:discovery","nbt":"subtype"},{"text":", Rarity: "},{"storage":"unknown_pack_name:discovery","nbt":"rarity"}]

@@ -1,0 +1,5 @@
+execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:1} run function unknown_pack_name:active/table/discovery/fill_level1_results
+execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:2} if data storage unknown_pack_name:discovery {type:"rune"} run function unknown_pack_name:active/table/discovery/fill_level2_rune_results
+execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:2} if data storage unknown_pack_name:discovery {type:"accessory"} run function unknown_pack_name:active/table/discovery/fill_level2_accessory_results
+execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:2} if data storage unknown_pack_name:discovery {type:"dig_site"} run function unknown_pack_name:active/table/discovery/fill_level2_dig_site_results
+execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:3} run function unknown_pack_name:active/table/discovery/fill_level3_results

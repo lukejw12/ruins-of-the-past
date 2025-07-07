@@ -4,4 +4,7 @@ execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"
 function unknown_pack_name:active/table/discovery/give_reward
 
 data remove block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data".discovery_level
-data modify storage unknown_pack_name:discovery clear
+data remove storage unknown_pack_name:discovery type
+data remove storage unknown_pack_name:discovery subtype
+data remove storage unknown_pack_name:discovery rarity
+data remove storage unknown_pack_name:discovery selected
