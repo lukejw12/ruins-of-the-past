@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "default_block_use"
+    }
+  },
+  "rewards": {
+    "function": "unknown_pack_name:core/block/placed"
+  }
+}

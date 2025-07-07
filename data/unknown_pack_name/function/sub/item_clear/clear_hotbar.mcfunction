@@ -1,0 +1,2 @@
+$execute if items entity @s hotbar.$(slot) stone[custom_data={gui_filler:1b}] run item replace entity @s hotbar.$(slot) with air
+$execute if items entity @s hotbar.$(slot) *[custom_data={recipe_result:1b,recipe_type:"ancient_tablet"}] run item replace entity @s hotbar.$(slot) with air

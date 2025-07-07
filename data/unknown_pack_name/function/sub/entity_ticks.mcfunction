@@ -1,0 +1,1 @@
+execute if entity @s[tag=table] run function unknown_pack_name:active/table/tick
