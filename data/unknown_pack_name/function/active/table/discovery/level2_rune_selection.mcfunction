@@ -1,5 +1,7 @@
+say "=== LEVEL 2 RUNE SELECTION STARTED ==="
 
 execute store result score #random temp run random value 1..15
+say "Random rune selected: %s" with score #random temp
 
 execute if score #random temp matches 1 run data modify storage unknown_pack_name:discovery subtype set value "hearty"
 execute if score #random temp matches 2 run data modify storage unknown_pack_name:discovery subtype set value "venomous"
@@ -17,7 +19,12 @@ execute if score #random temp matches 13 run data modify storage unknown_pack_na
 execute if score #random temp matches 14 run data modify storage unknown_pack_name:discovery subtype set value "vampiric"
 execute if score #random temp matches 15 run data modify storage unknown_pack_name:discovery subtype set value "berserker"
 
+tellraw @p [{"text":"Selected subtype: "},{"storage":"unknown_pack_name:discovery","nbt":"subtype"}]
 
+say "About to call fill_level2_rune_results"
 function unknown_pack_name:active/table/discovery/fill_level2_rune_results
+say "fill_level2_rune_results completed"
 
 scoreboard players reset #random temp
+
+say "=== LEVEL 2 RUNE SELECTION COMPLETE ==="
