@@ -1,0 +1,3 @@
+$execute if items entity @p[distance=..10] $(location).$(slot) stone[custom_data~{ancient_tablet:1b,discovery_level:1}] run item replace entity @p[distance=..10] $(location).$(slot) with air
+$execute if items entity @p[distance=..10] $(location).$(slot) stone[custom_data~{ancient_tablet:1b,discovery_level:2}] run item replace entity @p[distance=..10] $(location).$(slot) with air
+$execute if items entity @p[distance=..10] $(location).$(slot) stone[custom_data~{ancient_tablet:1b,discovery_level:3}] run item replace entity @p[distance=..10] $(location).$(slot) with air

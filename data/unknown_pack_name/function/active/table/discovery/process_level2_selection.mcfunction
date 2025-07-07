@@ -33,13 +33,18 @@ execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"crystal_of_pure_energy"} run data modify storage unknown_pack_name:discovery subtype set value "crystal_of_pure_energy"
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"orb_of_mystical_forces"} run data modify storage unknown_pack_name:discovery subtype set value "orb_of_mystical_forces"
 
-# Dig site subtypes
+# Dig site subtypes - these are final rewards (no level 3)
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"desert_ruins"} run data modify storage unknown_pack_name:discovery subtype set value "desert_ruins"
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"oasis_temple"} run data modify storage unknown_pack_name:discovery subtype set value "oasis_temple"
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"ancient_tomb"} run data modify storage unknown_pack_name:discovery subtype set value "ancient_tomb"
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"buried_city"} run data modify storage unknown_pack_name:discovery subtype set value "buried_city"
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"forgotten_shrine"} run data modify storage unknown_pack_name:discovery subtype set value "forgotten_shrine"
 execute if data storage unknown_pack_name:discovery selected{discovery_subtype:"lost_pyramid"} run data modify storage unknown_pack_name:discovery subtype set value "lost_pyramid"
+
+execute if data storage unknown_pack_name:discovery {type:"dig_site"} run function unknown_pack_name:active/table/discovery/generate_final_reward
+execute unless data storage unknown_pack_name:discovery {type:"dig_site"} unless data storage unknown_pack_name:discovery selected{discovery_subtype:"unknown"} run function unknown_pack_name:active/table/discovery/advance_to_level3
+
+
 
 execute if data storage unknown_pack_name:discovery selected{final_reward:1b} run function unknown_pack_name:active/table/discovery/generate_final_reward
 execute unless data storage unknown_pack_name:discovery selected{final_reward:1b} unless data storage unknown_pack_name:discovery selected{discovery_subtype:"unknown"} run function unknown_pack_name:active/table/discovery/advance_to_level3

@@ -1,16 +1,39 @@
 
-say "fill_level1_results called"
-item replace block ~ ~ ~ container.4 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Rune"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"rune"}]
-item replace block ~ ~ ~ container.5 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Dig Site"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"dig_site"}]
-item replace block ~ ~ ~ container.6 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Accessory"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"accessory"}]
+execute store result score #type1 temp run random value 1..3
+execute store result score #type2 temp run random value 1..3
+execute store result score #type3 temp run random value 1..3
+execute store result score #type4 temp run random value 1..3
+execute store result score #type5 temp run random value 1..3
+execute store result score #type6 temp run random value 1..3
+execute store result score #type7 temp run random value 1..3
+execute store result score #type8 temp run random value 1..3
+execute store result score #type9 temp run random value 1..3
+execute store result score #type10 temp run random value 1..3
+execute store result score #type11 temp run random value 1..3
+execute store result score #type12 temp run random value 1..3
 
-item replace block ~ ~ ~ container.7 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Unknown"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.13 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Mystery"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.14 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Ancient"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.15 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Forgotten"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.16 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Lost"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.22 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Hidden"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.23 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Buried"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.24 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Sealed"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-item replace block ~ ~ ~ container.25 with stone[item_name={font:"illageralt",color:"dark_gray",obfuscated:false,text:"Cursed"},custom_data={discovery_result:1b,discovery_level:1,discovery_type:"unknown"}]
-say "Placed all level 1 items"
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:4,type_num:"#type1"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:5,type_num:"#type2"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:6,type_num:"#type3"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:7,type_num:"#type4"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:13,type_num:"#type5"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:14,type_num:"#type6"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:15,type_num:"#type7"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:16,type_num:"#type8"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:22,type_num:"#type9"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:23,type_num:"#type10"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:24,type_num:"#type11"}
+function unknown_pack_name:active/table/discovery/place_random_level1_type {slot:25,type_num:"#type12"}
+
+scoreboard players reset #type1 temp
+scoreboard players reset #type2 temp
+scoreboard players reset #type3 temp
+scoreboard players reset #type4 temp
+scoreboard players reset #type5 temp
+scoreboard players reset #type6 temp
+scoreboard players reset #type7 temp
+scoreboard players reset #type8 temp
+scoreboard players reset #type9 temp
+scoreboard players reset #type10 temp
+scoreboard players reset #type11 temp
+scoreboard players reset #type12 temp

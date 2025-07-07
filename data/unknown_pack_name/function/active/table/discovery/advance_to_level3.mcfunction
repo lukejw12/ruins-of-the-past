@@ -7,3 +7,4 @@ execute store result block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_
 function unknown_pack_name:active/table/discovery/fill_level3_results
 
 scoreboard players reset #current_uses temp
+function unknown_pack_name:active/table/discovery/refill_current_level

@@ -1,3 +1,4 @@
+
 execute store result score #rune1 temp run random value 1..15
 execute store result score #rune2 temp run random value 1..15
 execute store result score #rune3 temp run random value 1..15
@@ -10,6 +11,7 @@ execute store result score #rune9 temp run random value 1..15
 execute store result score #rune10 temp run random value 1..15
 execute store result score #rune11 temp run random value 1..15
 execute store result score #rune12 temp run random value 1..15
+
 
 function unknown_pack_name:active/table/discovery/place_random_rune {slot:4,rune_num:"#rune1"}
 function unknown_pack_name:active/table/discovery/place_random_rune {slot:5,rune_num:"#rune2"}
@@ -24,6 +26,7 @@ function unknown_pack_name:active/table/discovery/place_random_rune {slot:23,run
 function unknown_pack_name:active/table/discovery/place_random_rune {slot:24,rune_num:"#rune11"}
 function unknown_pack_name:active/table/discovery/place_random_rune {slot:25,rune_num:"#rune12"}
 
+
 scoreboard players reset #rune1 temp
 scoreboard players reset #rune2 temp
 scoreboard players reset #rune3 temp
@@ -36,3 +39,4 @@ scoreboard players reset #rune9 temp
 scoreboard players reset #rune10 temp
 scoreboard players reset #rune11 temp
 scoreboard players reset #rune12 temp
+

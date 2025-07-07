@@ -1,4 +1,6 @@
+
 execute store result score #random temp run random value 1..15
+
 execute if score #random temp matches 1 run data modify storage unknown_pack_name:discovery subtype set value "hearty"
 execute if score #random temp matches 2 run data modify storage unknown_pack_name:discovery subtype set value "venomous"
 execute if score #random temp matches 3 run data modify storage unknown_pack_name:discovery subtype set value "swift"
@@ -15,5 +17,7 @@ execute if score #random temp matches 13 run data modify storage unknown_pack_na
 execute if score #random temp matches 14 run data modify storage unknown_pack_name:discovery subtype set value "vampiric"
 execute if score #random temp matches 15 run data modify storage unknown_pack_name:discovery subtype set value "berserker"
 
+
 function unknown_pack_name:active/table/discovery/fill_level2_rune_results
+
 scoreboard players reset #random temp
