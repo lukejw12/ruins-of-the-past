@@ -1,0 +1,12 @@
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:4,index:0}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:5,index:1}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:6,index:2}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:7,index:3}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:13,index:4}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:14,index:5}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:15,index:6}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:16,index:7}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:22,index:8}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:23,index:9}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:24,index:10}
+function unknown_pack_name:active/table/discovery/reveal_word_at_slot {slot:25,index:11}

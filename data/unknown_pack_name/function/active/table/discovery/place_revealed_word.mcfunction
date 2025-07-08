@@ -1,0 +1,1 @@
+$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"",color:"white",italic:false,extra:[{storage:"unknown_pack_name:temp",nbt:"clicked_word"}]},lore=[{text:"",font:"illageralt",color:"gray",italic:false,extra:[{storage:"unknown_pack_name:temp",nbt:"clicked_word"}]}],custom_data={discovery_result:1b,word_revealed:1b}]

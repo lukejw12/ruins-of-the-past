@@ -1,0 +1,5 @@
+$data modify storage unknown_pack_name:temp reveal_word set from storage unknown_pack_name:discovery grid_words[$(index)]
+execute store success score #is_target temp run data modify storage unknown_pack_name:temp test_target set from storage unknown_pack_name:discovery target_word
+$execute if score #is_target temp matches 0 run item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"",color:"gold",bold:true,italic:false,extra:[{storage:"unknown_pack_name:temp",nbt:"reveal_word"}]},lore=[{text:"",font:"illageralt",color:"yellow",italic:true,extra:[{storage:"unknown_pack_name:temp",nbt:"reveal_word"}]},{text:"✓ TARGET WORD",color:"green",bold:true}],custom_data={discovery_result:1b,word_revealed:1b,target_word:1b}]
+$execute unless score #is_target temp matches 0 run item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"",color:"white",italic:false,extra:[{storage:"unknown_pack_name:temp",nbt:"reveal_word"}]},lore=[{text:"",font:"illageralt",color:"gray",italic:true,extra:[{storage:"unknown_pack_name:temp",nbt:"reveal_word"}]}],custom_data={discovery_result:1b,word_revealed:1b}]
+scoreboard players reset #is_target temp

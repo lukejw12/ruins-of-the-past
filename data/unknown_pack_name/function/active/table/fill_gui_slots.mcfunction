@@ -24,4 +24,4 @@ function unknown_pack_name:active/table/fill_result_slot {slot:22}
 function unknown_pack_name:active/table/fill_result_slot {slot:23}
 function unknown_pack_name:active/table/fill_result_slot {slot:24}
 function unknown_pack_name:active/table/fill_result_slot {slot:25}
-function unknown_pack_name:active/table/fill_slot {slot:26}
+function unknown_pack_name:active/table/fill_info_slot {slot:26}

@@ -1,0 +1,2 @@
+$data modify storage unknown_pack_name:temp current_word set from storage unknown_pack_name:discovery grid_words[$(index)]
+$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"",font:"illageralt",color:"dark_gray",italic:false,extra:[{storage:"unknown_pack_name:temp",nbt:"current_word"}]},custom_data={discovery_result:1b,discovery_level:1,word_puzzle:1b,slot_index:$(index),word_value:"",extra:[{storage:"unknown_pack_name:temp",nbt:"current_word"}]}]
