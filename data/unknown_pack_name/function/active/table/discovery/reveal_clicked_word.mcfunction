@@ -1,2 +1,3 @@
+function unknown_pack_name:active/table/discovery/get_clicked_word
 data modify storage unknown_pack_name:temp reveal_word set from storage unknown_pack_name:temp clicked_word
 function unknown_pack_name:active/table/discovery/place_revealed_word_by_value

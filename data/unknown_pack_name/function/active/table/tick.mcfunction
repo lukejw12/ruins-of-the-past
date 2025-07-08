@@ -22,3 +22,7 @@ data merge block ~ ~ ~ {CustomName:"Research Workbench"}
 scoreboard players operation #previous_tablet temp = #tablet_present temp
 execute unless score #stop temp matches 1.. if items block ~ ~ ~ container.10 stone[custom_data~{ancient_tablet:1b}] if items block ~ ~ ~ container.11 spyglass unless data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data".discovery_level run function unknown_pack_name:active/table/recipes/ancient_tablet_valid
 execute if items block ~ ~ ~ container.10 stone[custom_data~{ancient_tablet:1b}] if items block ~ ~ ~ container.11 spyglass if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data".discovery_level run function unknown_pack_name:active/table/discovery/check_discovery_click
+
+execute if score @s level2_delay matches 1.. run scoreboard players remove @s level2_delay 1
+execute if score @s level2_delay matches 0 if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:1} run function unknown_pack_name:active/table/discovery/advance_to_level2
+execute if score @s level2_delay matches 0 run scoreboard players reset @s level2_delay
