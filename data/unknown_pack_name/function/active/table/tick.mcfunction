@@ -48,3 +48,4 @@ execute if data storage unknown_pack_name:puzzle_game {puzzle_active:1b} run fun
 execute if score @s level3_delay matches 1.. run scoreboard players remove @s level3_delay 1
 execute if score @s level3_delay matches 0 if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:2} run function unknown_pack_name:active/table/discovery/advance_to_level3
 execute if score @s level3_delay matches 0 run scoreboard players reset @s level3_delay
+execute if score @s clean_tablets_next_tick matches 1 run function unknown_pack_name:active/table/discovery/delayed_tablet_clean

@@ -7,8 +7,8 @@ execute store result block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_
 
 function unknown_pack_name:active/table/recipes/ancient_tablet_clear_results
 
-execute if data storage unknown_pack_name:discovery {type:"rune"} run function unknown_pack_name:active/table/discovery/level2_rune_selection
+execute if data storage unknown_pack_name:discovery {type:"rune"} run function unknown_pack_name:active/table/discovery/start_puzzle_game
 execute if data storage unknown_pack_name:discovery {type:"accessory"} run function unknown_pack_name:active/table/discovery/start_puzzle_game
-execute if data storage unknown_pack_name:discovery {type:"dig_site"} run function unknown_pack_name:active/table/discovery/level2_dig_site_selection
+execute if data storage unknown_pack_name:discovery {type:"dig_site"} run function unknown_pack_name:active/table/discovery/start_puzzle_game
 
 scoreboard players reset #current_uses temp
