@@ -1,0 +1,2 @@
+execute if score #first_click_pos temp = #clicked_pos temp run function unknown_pack_name:active/table/discovery/deselect_piece
+execute unless score #first_click_pos temp = #clicked_pos temp run function unknown_pack_name:active/table/discovery/swap_puzzle_pieces

@@ -1,0 +1,12 @@
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:4,pos:0}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:5,pos:1}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:6,pos:2}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:7,pos:3}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:13,pos:4}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:14,pos:5}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:15,pos:6}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:16,pos:7}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:22,pos:8}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:23,pos:9}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:24,pos:10}
+function unknown_pack_name:active/table/discovery/place_piece_in_slot {slot:25,pos:11}

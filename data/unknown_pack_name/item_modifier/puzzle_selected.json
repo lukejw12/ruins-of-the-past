@@ -1,0 +1,8 @@
+{
+    "function": "set_name",
+    "name": {
+        "text": "Selected Piece",
+        "color": "yellow",
+        "bold": true
+    }
+}
