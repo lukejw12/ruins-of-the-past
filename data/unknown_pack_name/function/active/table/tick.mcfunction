@@ -49,3 +49,7 @@ execute if score @s level3_delay matches 1.. run scoreboard players remove @s le
 execute if score @s level3_delay matches 0 if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{discovery_level:2} run function unknown_pack_name:active/table/discovery/advance_to_level3
 execute if score @s level3_delay matches 0 run scoreboard players reset @s level3_delay
 execute if score @s clean_tablets_next_tick matches 1 run function unknown_pack_name:active/table/discovery/delayed_tablet_clean
+execute if score @s completion_delay matches 1.. run scoreboard players remove @s completion_delay 1
+execute if score @s completion_delay matches 0 if data storage unknown_pack_name:puzzle_game {type:"dig_site"} run function unknown_pack_name:active/table/discovery/generate_dig_site_final_reward
+execute if score @s completion_delay matches 0 unless data storage unknown_pack_name:puzzle_game {type:"dig_site"} run function unknown_pack_name:active/table/discovery/generate_final_reward
+execute if score @s completion_delay matches 0 run scoreboard players reset @s completion_delay

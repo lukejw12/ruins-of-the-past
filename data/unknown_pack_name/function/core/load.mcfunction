@@ -7,3 +7,4 @@ scoreboard objectives add puzzle_click_cooldown dummy
 scoreboard objectives add puzzle_timer dummy
 scoreboard players set #20 temp 20
 scoreboard objectives add clean_tablets_next_tick dummy
+scoreboard objectives add completion_delay dummy
