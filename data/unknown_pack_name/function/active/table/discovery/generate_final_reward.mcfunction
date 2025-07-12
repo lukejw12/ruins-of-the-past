@@ -3,7 +3,6 @@ execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"
 execute unless data storage unknown_pack_name:discovery rarity if data storage unknown_pack_name:discovery base_rarity run data modify storage unknown_pack_name:discovery rarity set from storage unknown_pack_name:discovery base_rarity
 function unknown_pack_name:active/table/discovery/give_reward
 
-# Clean up discovery data
 data remove storage unknown_pack_name:discovery type
 data remove storage unknown_pack_name:discovery subtype
 data remove storage unknown_pack_name:discovery rarity

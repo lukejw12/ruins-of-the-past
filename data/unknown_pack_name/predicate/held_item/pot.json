@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.*": {
+                "items": "stone",
+                "predicates": {
+                    "custom_data": {
+                        "pot_item": true
+                    }
+                }
+            }
+        }
+    }
+}

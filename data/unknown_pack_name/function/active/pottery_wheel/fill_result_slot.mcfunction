@@ -1,0 +1,3 @@
+
+$execute unless items block ~ ~ ~ container.$(slot) light_gray_stained_glass_pane[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.$(slot) * unless items block ~ ~ ~ container.$(slot) stone[custom_data~{pottery_result:1b}] unless items block ~ ~ ~ container.$(slot) stone[custom_data~{pot_item:1b}] run function unknown_pack_name:active/pottery_wheel/return_item {slot:$(slot)}
+$execute unless items block ~ ~ ~ container.$(slot) * run item replace block ~ ~ ~ container.$(slot) with light_gray_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={gui_filler:1b}]

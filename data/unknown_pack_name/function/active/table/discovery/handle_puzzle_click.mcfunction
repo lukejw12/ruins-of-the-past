@@ -24,7 +24,7 @@ execute if score #clicked_slot temp matches 23 run scoreboard players set #click
 execute if score #clicked_slot temp matches 24 run scoreboard players set #clicked_pos temp 10
 execute if score #clicked_slot temp matches 25 run scoreboard players set #clicked_pos temp 11
 execute unless score #clicked_slot temp matches -1 run function unknown_pack_name:active/table/discovery/process_puzzle_click
-execute unless score #clicked_slot temp matches -1 run function unknown_pack_name:active/table/discovery/place_puzzle_pieces
+execute unless score #cliced_slot temp matches -1 run function unknown_pack_name:active/table/discovery/place_puzzle_pieces
 
 scoreboard players reset #clicked_slot temp
 scoreboard players reset #clicked_pos temp
