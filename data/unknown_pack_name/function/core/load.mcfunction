@@ -8,3 +8,6 @@ scoreboard players set #20 temp 20
 scoreboard objectives add clean_tablets_next_tick dummy
 scoreboard objectives add completion_delay dummy
 scoreboard objectives add pot_id dummy
+scoreboard objectives add last_result_state dummy
+scoreboard objectives add should_consume dummy
+scoreboard objectives add has_result dummy
