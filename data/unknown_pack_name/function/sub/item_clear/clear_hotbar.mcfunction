@@ -8,3 +8,4 @@ $execute if items entity @s hotbar.$(slot) stone[custom_data~{ancient_tablet:1b,
 $execute if items entity @s hotbar.$(slot) stone[custom_data~{ancient_tablet:1b,discovery_level:1}] run item modify entity @s hotbar.$(slot) unknown_pack_name:clean_tablet_data
 $execute if items entity @s hotbar.$(slot) stone[custom_data~{ancient_tablet:1b,discovery_level:2}] run item modify entity @s hotbar.$(slot) unknown_pack_name:clean_tablet_data
 $execute if items entity @s hotbar.$(slot) stone[custom_data~{ancient_tablet:1b,discovery_level:3}] run item modify entity @s hotbar.$(slot) unknown_pack_name:clean_tablet_data
+$execute if items entity @s hotbar.$(slot) barrier[custom_data~{display_item:1b}] as @s run function unknown_pack_name:sub/clear_display_tag_hotbar {slot:$(slot)}

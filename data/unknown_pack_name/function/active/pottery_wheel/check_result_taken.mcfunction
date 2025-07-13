@@ -1,0 +1,1 @@
+execute unless items block ~ ~ ~ container.4 barrier[custom_data~{display_item:1b}] if items block ~ ~ ~ container.4 light_gray_stained_glass_pane[custom_data={gui_filler:1b}] run function unknown_pack_name:active/pottery_wheel/consume_crafting_materials

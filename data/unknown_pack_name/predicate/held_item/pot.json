@@ -4,7 +4,6 @@
     "predicate": {
         "slots": {
             "weapon.*": {
-                "items": "stone",
                 "predicates": {
                     "custom_data": {
                         "pot_item": true

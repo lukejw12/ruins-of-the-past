@@ -22,3 +22,5 @@ execute if items entity @s player.cursor stone[custom_data~{ancient_tablet:1b,ta
 execute if items entity @s player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:1}] run item modify entity @s player.cursor unknown_pack_name:clean_tablet_data
 execute if items entity @s player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:2}] run item modify entity @s player.cursor unknown_pack_name:clean_tablet_data
 execute if items entity @s player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:3}] run item modify entity @s player.cursor unknown_pack_name:clean_tablet_data
+$execute if items entity @s inventory.$(slot) barrier[custom_data~{display_item:1b}] as @s run function unknown_pack_name:sub/clear_display_tag_inventory {slot:$(slot)}
+execute if items entity @s player.cursor barrier[custom_data~{display_item:1b}] as @s run function unknown_pack_name:sub/clear_display_tag_cursor
