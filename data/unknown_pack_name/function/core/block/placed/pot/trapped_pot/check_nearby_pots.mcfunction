@@ -1,0 +1,9 @@
+execute positioned ~-1 ~ ~-1 run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~-1 ~ ~ run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~-1 ~ ~1 run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~ ~ ~-1 run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~ ~ ~ run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~ ~ ~1 run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~1 ~ ~-1 run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~1 ~ ~ run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position
+execute positioned ~1 ~ ~1 run function unknown_pack_name:core/block/placed/pot/trapped_pot/trigger_pot_at_position

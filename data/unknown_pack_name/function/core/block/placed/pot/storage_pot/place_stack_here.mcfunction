@@ -1,0 +1,1 @@
+execute as @e[type=item,distance=..3,limit=1,sort=nearest] run tp @s ~ ~ ~1

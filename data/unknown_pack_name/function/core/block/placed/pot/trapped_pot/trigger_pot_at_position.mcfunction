@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ barrier as @e[type=interaction,tag=pot_interaction,distance=..0.5] run function unknown_pack_name:core/block/placed/pot/trapped_pot/handle_triggered_pot

@@ -1,0 +1,3 @@
+execute if data entity @s interaction.player unless entity @p[distance=..10,predicate=unknown_pack_name:sneaking] run function unknown_pack_name:core/block/placed/pot/storage_pot/small_storage/deposit
+execute if data entity @s interaction.player if entity @p[distance=..10,predicate=unknown_pack_name:sneaking] run function unknown_pack_name:core/block/placed/pot/storage_pot/small_storage/withdraw
+data remove entity @s interaction

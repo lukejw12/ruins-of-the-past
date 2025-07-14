@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ barrier as @e[type=interaction,tag=pot_interaction,distance=..0.5] unless score @s explosion_timer matches 1.. run scoreboard players set @s explosion_timer 6

@@ -12,5 +12,8 @@ execute if score #can_consume temp matches 1 if items block ~ ~ ~ container.19 #
 execute if score #can_consume temp matches 1 if items block ~ ~ ~ container.11 #unknown_pack_name:pottery_materials run item modify block ~ ~ ~ container.11 {function:set_count,count:-1,add:true}
 execute if score #can_consume temp matches 1 if items block ~ ~ ~ container.9 #unknown_pack_name:pottery_materials run item modify block ~ ~ ~ container.9 {function:set_count,count:-1,add:true}
 
+execute if score #can_consume temp matches 1 if items block ~ ~ ~ container.10 tnt run item modify block ~ ~ ~ container.10 {function:set_count,count:-1,add:true}
+execute if score #can_consume temp matches 1 if items block ~ ~ ~ container.10 bundle run item modify block ~ ~ ~ container.10 {function:set_count,count:-1,add:true}
+
 scoreboard players reset #can_consume temp
 scoreboard players reset #recipe_filled temp

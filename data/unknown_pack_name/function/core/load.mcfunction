@@ -29,3 +29,8 @@ scoreboard objectives add should_check_pot dummy
 scoreboard objectives add pot_count dummy
 scoreboard objectives add tick_counter dummy
 scoreboard objectives add recipe_state dummy
+data modify storage unknown_pack_name:storage_pots temp set value {}
+scoreboard objectives add storage_pot_id dummy
+scoreboard objectives add stored_count dummy
+
+scoreboard objectives add explosion_timer dummy

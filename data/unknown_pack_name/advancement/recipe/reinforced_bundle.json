@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "leather"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "unknown_pack_name:reinforced_bundle"
+        ]
+    }
+}

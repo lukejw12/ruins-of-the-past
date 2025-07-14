@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ISI",
+        "L L",
+        "LLL"
+    ],
+    "key": {
+        "I": "minecraft:iron_ingot",
+        "S": "minecraft:string",
+        "L":"minecraft:leather"
+        },
+    "result": {
+        "id": "minecraft:bundle",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": {
+                "text": "Reinforced Bundle"
+                        },
+            "minecraft:custom_data": {
+                "reinforced_bundle": true,
+                "max_capacity": 256
+            }
+        }
+    }
+}
