@@ -11,3 +11,21 @@ scoreboard objectives add pot_id dummy
 scoreboard objectives add last_result_state dummy
 scoreboard objectives add should_consume dummy
 scoreboard objectives add has_result dummy
+
+scoreboard objectives add found_target dummy
+scoreboard objectives add precision_counter dummy
+scoreboard objectives add clicked_slot dummy
+scoreboard objectives add clicked_pot_type dummy
+scoreboard objectives add player_pot_count dummy
+scoreboard objectives add same_type_handled dummy
+scoreboard objectives add extra_pots dummy
+
+scoreboard objectives add slot4_count dummy
+scoreboard objectives add slot5_count dummy
+scoreboard objectives add slot6_count dummy
+scoreboard objectives add slot7_count dummy
+scoreboard objectives add excess_count dummy
+scoreboard objectives add should_check_pot dummy
+scoreboard objectives add pot_count dummy
+scoreboard objectives add tick_counter dummy
+scoreboard objectives add recipe_state dummy

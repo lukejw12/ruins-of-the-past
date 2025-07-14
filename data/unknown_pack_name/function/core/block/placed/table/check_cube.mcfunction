@@ -1,5 +1,3 @@
-function unknown_pack_name:core/block/placed/table/check_x_layer {x:"-0.2"}
-function unknown_pack_name:core/block/placed/table/check_x_layer {x:"-0.1"}
 function unknown_pack_name:core/block/placed/table/check_x_layer {x:"0"}
-function unknown_pack_name:core/block/placed/table/check_x_layer {x:"0.1"}
-function unknown_pack_name:core/block/placed/table/check_x_layer {x:"0.2"}
+execute unless score #found_target temp matches 1 run function unknown_pack_name:core/block/placed/table/check_x_layer {x:"-0.1"}
+execute unless score #found_target temp matches 1 run function unknown_pack_name:core/block/placed/table/check_x_layer {x:"0.1"}

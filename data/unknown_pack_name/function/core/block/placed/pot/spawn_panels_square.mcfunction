@@ -1,0 +1,4 @@
+function unknown_pack_name:core/block/placed/pot/spawn_pattern_panel_offset {direction:south,material_key:south_material,rotation:"[0f,0f,0f,1f]",y_offset:"-0.1875"}
+function unknown_pack_name:core/block/placed/pot/spawn_pattern_panel_offset {direction:north,material_key:north_material,rotation:"[0f,1f,0f,0f]",y_offset:"-0.1875"}
+function unknown_pack_name:core/block/placed/pot/spawn_pattern_panel_offset {direction:west,material_key:west_material,rotation:"[0f,-0.707f,0f,0.707f]",y_offset:"-0.1875"}
+function unknown_pack_name:core/block/placed/pot/spawn_pattern_panel_offset {direction:east,material_key:east_material,rotation:"[0f,0.707f,0f,0.707f]",y_offset:"-0.1875"}

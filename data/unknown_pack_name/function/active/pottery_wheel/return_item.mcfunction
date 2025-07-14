@@ -1,7 +1,14 @@
 $data modify storage unknown_pack_name:temp return_item set from block ~ ~ ~ Items[{Slot:$(slot)b}]
 
-execute if data storage unknown_pack_name:temp return_item.components."minecraft:custom_data"{pot_item:1b} if data storage unknown_pack_name:temp return_item.components."minecraft:custom_data"{display_item:1b} run scoreboard players set @s should_consume 1
+scoreboard players set #recipe_filled temp 0
+execute if items block ~ ~ ~ container.1 #unknown_pack_name:pottery_materials if items block ~ ~ ~ container.9 #unknown_pack_name:pottery_materials if items block ~ ~ ~ container.11 #unknown_pack_name:pottery_materials if items block ~ ~ ~ container.19 #unknown_pack_name:pottery_materials run scoreboard players set #recipe_filled temp 1
 
-execute at @p[distance=..10] run summon item ~ ~ ~ {Item:{id:barrier},PickupDelay:0,Motion:[0.0,0.1,0.0]}
-execute at @p[distance=..10] as @e[type=item,distance=..1,limit=1,sort=nearest] run data modify entity @s Item set from storage unknown_pack_name:temp return_item
+
+execute if data storage unknown_pack_name:temp return_item.components."minecraft:custom_data"{pot_item:1b} if data storage unknown_pack_name:temp return_item.components."minecraft:custom_data"{display_item:1b} if score #recipe_filled temp matches 1 run scoreboard players set @s should_consume 1
+
+execute if data entity @p[distance=..10] SelectedItem.components."minecraft:custom_data"{pot_item:1b} unless data storage unknown_pack_name:temp return_item.components."minecraft:custom_data"{pottery_result:1b} run data modify storage unknown_pack_name:temp return_item.count set value 64
+
+function unknown_pack_name:active/pottery_wheel/spawn_return_item with storage unknown_pack_name:temp return_item
 $item replace block ~ ~ ~ container.$(slot) with air
+
+scoreboard players reset #recipe_filled temp
