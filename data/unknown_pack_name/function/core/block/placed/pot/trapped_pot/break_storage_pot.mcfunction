@@ -1,2 +1,2 @@
-execute if entity @s[scores={storage_pot_id=1..}] run function unknown_pack_name:core/block/placed/pot/trapped_pot/drop_storage_contents
+execute if entity @s[scores={storage_pot_id=1..}] unless data entity @s data.stored_item.components."minecraft:custom_data".linked_storage run function unknown_pack_name:core/block/placed/pot/trapped_pot/drop_storage_contents
 function unknown_pack_name:sub/handle_pot_break

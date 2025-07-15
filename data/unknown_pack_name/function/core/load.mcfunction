@@ -34,3 +34,4 @@ scoreboard objectives add storage_pot_id dummy
 scoreboard objectives add stored_count dummy
 
 scoreboard objectives add explosion_timer dummy
+data modify storage unknown_pack_name:linked_storage temp set value {}

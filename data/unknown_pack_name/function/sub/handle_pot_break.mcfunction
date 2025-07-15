@@ -4,7 +4,7 @@ playsound block.decorated_pot.break block @a[distance=.8]
 
 data modify storage unknown_pack_name:temp broken_pot_data set from entity @s data.stored_item
 
-execute if data storage unknown_pack_name:temp broken_pot_data.components."minecraft:custom_data".storage_pot if entity @s[scores={storage_pot_id=1..}] run function unknown_pack_name:core/block/placed/pot/storage_pot/drop_all_contents
+execute if data storage unknown_pack_name:temp broken_pot_data.components."minecraft:custom_data".storage_pot unless data storage unknown_pack_name:temp broken_pot_data.components."minecraft:custom_data".linked_storage if entity @s[scores={storage_pot_id=1..}] run function unknown_pack_name:core/block/placed/pot/storage_pot/drop_all_contents
 
 summon item ~ ~ ~ {Item:{id:"barrier",count:1},PickupDelay:10,Motion:[0.0,0.1,0.0]}
 execute as @e[type=item,distance=..1,limit=1,sort=nearest] run function unknown_pack_name:sub/restore_pot_item_data

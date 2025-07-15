@@ -1,0 +1,1 @@
+$data modify storage unknown_pack_name:linked_storage $(player_uuid).count set value $(new_count)

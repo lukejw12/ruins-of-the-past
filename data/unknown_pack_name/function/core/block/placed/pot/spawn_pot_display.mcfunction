@@ -1,9 +1,27 @@
 execute store result score #next_pot_id temp run random value 1000..9999
 execute store result score #next_storage_id temp run random value 10000..99999
 
+execute store result score #player_rotation temp run data get entity @p[distance=..10,limit=1] Rotation[0]
+
+# South: 45.0° to -44.9° (wrapping around 180°/-180°)
+# West: 135.0° to 45.1°
+# North: -135.1° to -45.1°
+# East: -45.0° to 135.0° (but this wraps, so -45.0° to -135.0°)
+
+execute if score #player_rotation temp matches -45..45 run scoreboard players set #player_rotation temp 0
+execute if score #player_rotation temp matches 46..135 run scoreboard players set #player_rotation temp 1
+execute if score #player_rotation temp matches 136..180 run scoreboard players set #player_rotation temp 2
+execute if score #player_rotation temp matches -180..-136 run scoreboard players set #player_rotation temp 2
+execute if score #player_rotation temp matches -135..-46 run scoreboard players set #player_rotation temp 3
+
 data modify storage unknown_pack_name:temp original_item_data set from entity @p[distance=..10,limit=1] SelectedItem
 data modify storage unknown_pack_name:temp original_item_data.count set value 1
 data modify storage unknown_pack_name:temp pot_data set from storage unknown_pack_name:temp original_item_data.components."minecraft:custom_data"
+
+execute if score #player_rotation temp matches 0 run function unknown_pack_name:core/block/placed/pot/rotate_materials_0
+execute if score #player_rotation temp matches 1 run function unknown_pack_name:core/block/placed/pot/rotate_materials_1
+execute if score #player_rotation temp matches 2 run function unknown_pack_name:core/block/placed/pot/rotate_materials_2
+execute if score #player_rotation temp matches 3 run function unknown_pack_name:core/block/placed/pot/rotate_materials_3
 
 setblock ~ ~ ~ barrier
 
@@ -29,3 +47,5 @@ execute as @e[tag=needs_id,distance=..1] run tag @s remove needs_id
 execute as @e[tag=pot_interaction,distance=..1,limit=1] run data modify entity @s data.stored_item set from storage unknown_pack_name:temp original_item_data
 
 execute if data storage unknown_pack_name:temp pot_data.storage_pot run function unknown_pack_name:core/block/placed/pot/storage_pot/small_storage/init_storage
+execute if data storage unknown_pack_name:temp pot_data.linked_storage run function unknown_pack_name:core/block/placed/pot/linked_storage/init_storage
+scoreboard players reset #player_rotation temp
