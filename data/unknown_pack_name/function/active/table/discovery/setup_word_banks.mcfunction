@@ -9,17 +9,6 @@ data modify storage unknown_pack_name:word_banks runes append value "enchant"
 data modify storage unknown_pack_name:word_banks runes append value "magic"
 data modify storage unknown_pack_name:word_banks runes append value "spell"
 
-#acc
-data modify storage unknown_pack_name:word_banks accessory set value []
-data modify storage unknown_pack_name:word_banks accessory append value "amulet"
-data modify storage unknown_pack_name:word_banks accessory append value "power"
-data modify storage unknown_pack_name:word_banks accessory append value "health"
-data modify storage unknown_pack_name:word_banks accessory append value "trinket"
-data modify storage unknown_pack_name:word_banks accessory append value "charm"
-data modify storage unknown_pack_name:word_banks accessory append value "jewel"
-data modify storage unknown_pack_name:word_banks accessory append value "pendant"
-data modify storage unknown_pack_name:word_banks accessory append value "talisman"
-
 #dig
 data modify storage unknown_pack_name:word_banks dig_site set value []
 data modify storage unknown_pack_name:word_banks dig_site append value "dig"
