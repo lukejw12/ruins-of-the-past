@@ -1,0 +1,3 @@
+data modify storage unknown_pack_name:temp helmet_item set from entity @s equipment.head
+execute if data storage unknown_pack_name:temp helmet_item.components."minecraft:lore"[{text:"Luminous Rune:",color:"gray"}] run effect give @s night_vision 11 0 true
+execute if data storage unknown_pack_name:temp helmet_item.components."minecraft:lore"[{text:"Shadowy Rune:",color:"gray"}] run function unknown_pack_name:rune_effects/clear_vision_effects

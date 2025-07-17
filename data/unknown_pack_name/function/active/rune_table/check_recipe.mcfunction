@@ -1,7 +1,6 @@
 scoreboard players set #has_all_items temp 0
 scoreboard players set #can_craft temp 0
 
-# Check if all slots are filled correctly (same as before)
 execute if items block ~ ~ ~ container.4 * unless items block ~ ~ ~ container.4 stone[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.11 *[custom_data~{luminous_rune:1b}] if items block ~ ~ ~ container.15 *[custom_data~{transcriber:1b}] run scoreboard players set #has_all_items temp 1
 execute if items block ~ ~ ~ container.4 * unless items block ~ ~ ~ container.4 stone[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.11 *[custom_data~{hearty_rune:1b}] if items block ~ ~ ~ container.15 *[custom_data~{transcriber:1b}] run scoreboard players set #has_all_items temp 1
 execute if items block ~ ~ ~ container.4 * unless items block ~ ~ ~ container.4 stone[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.11 *[custom_data~{swift_rune:1b}] if items block ~ ~ ~ container.15 *[custom_data~{transcriber:1b}] run scoreboard players set #has_all_items temp 1

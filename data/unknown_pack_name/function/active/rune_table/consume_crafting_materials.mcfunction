@@ -1,4 +1,3 @@
-# Get the required levels for the rune
 data modify storage unknown_pack_name:temp current_rune_type set value ""
 execute if items block ~ ~ ~ container.11 *[custom_data~{luminous_rune:1b}] run data modify storage unknown_pack_name:temp current_rune_type set value "luminous"
 execute if items block ~ ~ ~ container.11 *[custom_data~{hearty_rune:1b}] run data modify storage unknown_pack_name:temp current_rune_type set value "hearty"
@@ -15,13 +14,10 @@ execute if items block ~ ~ ~ container.11 *[custom_data~{berserker_rune:1b}] run
 
 function unknown_pack_name:active/rune_table/get_rune_cost
 
-# Consume the input item (slot 4)
 item modify block ~ ~ ~ container.4 {function:set_count,count:-1,add:true}
 
-# Consume the rune
 item modify block ~ ~ ~ container.11 {function:set_count,count:-1,add:true}
 
-# Update transcriber levels
 execute store result score #current_levels temp run data get block ~ ~ ~ Items[{Slot:15b}].components."minecraft:custom_data".stored_levels
 scoreboard players operation #current_levels temp -= #required_levels temp
 execute store result storage unknown_pack_name:temp new_levels int 1 run scoreboard players get #current_levels temp

@@ -1,4 +1,4 @@
-# Add blank space first, then rune effect to lore based on rune type - ALL BLUE stats
+
 execute if data storage unknown_pack_name:temp {current_rune_type:"hearty"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"",color:"white",italic:false}
 execute if data storage unknown_pack_name:temp {current_rune_type:"hearty"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"Hearty Rune:",color:"gray",italic:false}
 execute if data storage unknown_pack_name:temp {current_rune_type:"hearty"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+1 HP",color:"blue",italic:false}
@@ -37,11 +37,19 @@ execute if data storage unknown_pack_name:temp {current_rune_type:"thunderous"} 
 
 execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"",color:"white",italic:false}
 execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"Earthen Rune:",color:"gray",italic:false}
-execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.7 Step Height",color:"blue",italic:false}
+
+execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} if data storage unknown_pack_name:temp {equipment_slot:"head"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.7 Step Height",color:"blue",italic:false}
+
+execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} if data storage unknown_pack_name:temp input_item{id:"minecraft:wooden_sword"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.5% Attack Damage",color:"blue",italic:false}
+execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} if data storage unknown_pack_name:temp input_item{id:"minecraft:stone_sword"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.5% Attack Damage",color:"blue",italic:false}
+execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} if data storage unknown_pack_name:temp input_item{id:"minecraft:iron_sword"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.5% Attack Damage",color:"blue",italic:false}
+execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} if data storage unknown_pack_name:temp input_item{id:"minecraft:golden_sword"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.5% Attack Damage",color:"blue",italic:false}
+execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} if data storage unknown_pack_name:temp input_item{id:"minecraft:diamond_sword"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.5% Attack Damage",color:"blue",italic:false}
+execute if data storage unknown_pack_name:temp {current_rune_type:"earthen"} if data storage unknown_pack_name:temp input_item{id:"minecraft:netherite_sword"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+0.5% Attack Damage",color:"blue",italic:false}
 
 execute if data storage unknown_pack_name:temp {current_rune_type:"aquatic"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"",color:"white",italic:false}
 execute if data storage unknown_pack_name:temp {current_rune_type:"aquatic"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"Aquatic Rune:",color:"gray",italic:false}
-execute if data storage unknown_pack_name:temp {current_rune_type:"aquatic"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+10 Oxygen",color:"blue",italic:false}
+execute if data storage unknown_pack_name:temp {current_rune_type:"aquatic"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"+1 Oxygen",color:"blue",italic:false}
 
 execute if data storage unknown_pack_name:temp {current_rune_type:"vampiric"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"",color:"white",italic:false}
 execute if data storage unknown_pack_name:temp {current_rune_type:"vampiric"} run data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:lore" append value {text:"Vampiric Rune:",color:"gray",italic:false}

@@ -21,6 +21,8 @@ execute if items entity @s inventory.* stone[custom_data~{ancient_tablet:1b,disc
 execute if items entity @s inventory.* stone[custom_data~{ancient_tablet:1b,tablet_uses:3}] run function unknown_pack_name:sub/item_clear/check_slot
 execute if items entity @s hotbar.* stone[custom_data~{ancient_tablet:1b,discovery_level:1}] run function unknown_pack_name:sub/item_clear/check_slot
 execute if items entity @s hotbar.* stone[custom_data~{ancient_tablet:1b,tablet_uses:3}] run function unknown_pack_name:sub/item_clear/check_slot
+execute if items entity @s player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:1}] run function unknown_pack_name:sub/item_clear/check_slot
+execute if items entity @s player.cursor stone[custom_data~{ancient_tablet:1b,tablet_uses:3}] run function unknown_pack_name:sub/item_clear/check_slot
 
 execute if items entity @s player.cursor *[custom_data~{gui_filler:1b}] run function unknown_pack_name:sub/item_clear/check_slot
 execute if items entity @s player.cursor *[custom_data~{discovery_result:1b}] run function unknown_pack_name:sub/item_clear/check_slot

@@ -1,4 +1,3 @@
-# Set rune data based on subtype with effects
 execute if data storage unknown_pack_name:discovery {subtype:"hearty"} run data modify storage unknown_pack_name:temp rune_data set value {rune_name:"Hearty",rune_type:"hearty",equipment_type:"Armor",equipment_slot:"armor",effect:"+1 Heart"}
 execute if data storage unknown_pack_name:discovery {subtype:"venomous"} run data modify storage unknown_pack_name:temp rune_data set value {rune_name:"Venomous",rune_type:"venomous",equipment_type:"Weapons",equipment_slot:"weapon",effect:"Poison on Hit"}
 execute if data storage unknown_pack_name:discovery {subtype:"swift"} run data modify storage unknown_pack_name:temp rune_data set value {rune_name:"Swift",rune_type:"swift",equipment_type:"Boots",equipment_slot:"feet",effect:"+5% Speed, -20% Jump"}
@@ -12,5 +11,4 @@ execute if data storage unknown_pack_name:discovery {subtype:"aquatic"} run data
 execute if data storage unknown_pack_name:discovery {subtype:"vampiric"} run data modify storage unknown_pack_name:temp rune_data set value {rune_name:"Vampiric",rune_type:"vampiric",equipment_type:"Swords & Axes",equipment_slot:"weapon",effect:"9% Heal on Hit"}
 execute if data storage unknown_pack_name:discovery {subtype:"berserker"} run data modify storage unknown_pack_name:temp rune_data set value {rune_name:"Berserker",rune_type:"berserker",equipment_type:"Armor",equipment_slot:"armor",effect:"+10% Armor"}
 
-# Give the rune using macro
 function unknown_pack_name:active/table/discovery/runes/give_rune with storage unknown_pack_name:temp rune_data

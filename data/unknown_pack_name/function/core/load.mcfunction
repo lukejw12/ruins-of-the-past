@@ -38,3 +38,5 @@ data modify storage unknown_pack_name:linked_storage temp set value {}
 
 scoreboard objectives add system_cleared dummy
 scoreboard objectives add incompatible dummy
+
+function unknown_pack_name:active/rune_table/vanilla_attributes/initialize_data

@@ -1,0 +1,2 @@
+execute if entity @s[nbt={active_effects:[{id:"minecraft:darkness"}]}] run effect clear @s darkness
+execute if entity @s[nbt={active_effects:[{id:"minecraft:blindness"}]}] run effect clear @s blindness

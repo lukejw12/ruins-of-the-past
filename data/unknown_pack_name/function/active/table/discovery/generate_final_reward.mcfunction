@@ -1,6 +1,5 @@
 function unknown_pack_name:active/table/recipes/ancient_tablet_craft
 
-# Chance for tablet to shatter (20% chance)
 execute store result score #shatter_roll temp run random value 1..100
 execute if score #shatter_roll temp matches 1..20 run item replace block ~ ~ ~ container.10 with air
 execute if score #shatter_roll temp matches 1..20 run tellraw @p[distance=..10] [{"text":"The ancient tablet crumbles to dust from the intense research...","color":"red","italic":true}]

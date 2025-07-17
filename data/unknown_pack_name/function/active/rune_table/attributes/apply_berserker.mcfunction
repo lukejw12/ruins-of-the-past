@@ -1,1 +1,10 @@
-data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:attribute_modifiers" append value {type:"armor",amount:0.1,operation:"add_multiplied_base",slot:"chest",id:"unknown_pack_name:berserker_boost"}
+
+data modify storage unknown_pack_name:temp modifier_data set value {attribute_type:"armor",amount:0.1,operation:"add_multiplied_base"}
+data modify storage unknown_pack_name:temp modifier_data.equipment_slot set from storage unknown_pack_name:temp equipment_slot
+
+execute if data storage unknown_pack_name:temp {equipment_slot:"head"} run data modify storage unknown_pack_name:temp modifier_data.modifier_id set value "unknown_pack_name:berserker_head"
+execute if data storage unknown_pack_name:temp {equipment_slot:"chest"} run data modify storage unknown_pack_name:temp modifier_data.modifier_id set value "unknown_pack_name:berserker_chest"
+execute if data storage unknown_pack_name:temp {equipment_slot:"legs"} run data modify storage unknown_pack_name:temp modifier_data.modifier_id set value "unknown_pack_name:berserker_legs"
+execute if data storage unknown_pack_name:temp {equipment_slot:"feet"} run data modify storage unknown_pack_name:temp modifier_data.modifier_id set value "unknown_pack_name:berserker_feet"
+
+function unknown_pack_name:active/rune_table/attributes/add_attribute_modifier with storage unknown_pack_name:temp modifier_data

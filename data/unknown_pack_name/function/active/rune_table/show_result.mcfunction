@@ -1,7 +1,5 @@
-# Get item and rune data
 data modify storage unknown_pack_name:temp input_item set from block ~ ~ ~ Items[{Slot:4b}]
 
-# Get rune type the same way as the arrow slot
 data modify storage unknown_pack_name:temp current_rune_type set value ""
 execute if items block ~ ~ ~ container.11 *[custom_data~{luminous_rune:1b}] run data modify storage unknown_pack_name:temp current_rune_type set value "luminous"
 execute if items block ~ ~ ~ container.11 *[custom_data~{hearty_rune:1b}] run data modify storage unknown_pack_name:temp current_rune_type set value "hearty"

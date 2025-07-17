@@ -35,10 +35,3 @@ function unknown_pack_name:active/table/recipes/clean_tablet_slot {location:"inv
 function unknown_pack_name:active/table/recipes/clean_tablet_slot {location:"inventory",slot:24}
 function unknown_pack_name:active/table/recipes/clean_tablet_slot {location:"inventory",slot:25}
 function unknown_pack_name:active/table/recipes/clean_tablet_slot {location:"inventory",slot:26}
-
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,tablet_uses:3}] run item modify entity @p[distance=..10] player.cursor unknown_pack_name:clean_tablet_data
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,tablet_uses:2}] run item modify entity @p[distance=..10] player.cursor unknown_pack_name:clean_tablet_data
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,tablet_uses:1}] run item modify entity @p[distance=..10] player.cursor unknown_pack_name:clean_tablet_data
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:1}] run item modify entity @p[distance=..10] player.cursor unknown_pack_name:clean_tablet_data
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:2}] run item modify entity @p[distance=..10] player.cursor unknown_pack_name:clean_tablet_data
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:3}] run item modify entity @p[distance=..10] player.cursor unknown_pack_name:clean_tablet_data

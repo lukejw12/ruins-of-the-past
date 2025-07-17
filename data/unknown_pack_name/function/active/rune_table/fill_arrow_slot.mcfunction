@@ -1,7 +1,5 @@
-# Don't return items from arrow slot unless it's a wrong item
 $execute unless items block ~ ~ ~ container.$(slot) stone[custom_data~{arrow_slot:1b}] unless items block ~ ~ ~ container.$(slot) stone[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.$(slot) * run function unknown_pack_name:active/rune_table/return_item {slot:$(slot)}
 
-# Check if all required items are present
 scoreboard players set #has_item temp 0
 scoreboard players set #has_rune temp 0
 scoreboard players set #has_transcriber temp 0

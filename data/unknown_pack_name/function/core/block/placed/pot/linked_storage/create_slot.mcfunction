@@ -1,3 +1,2 @@
-# Only create a new slot if one doesn't already exist
 $execute unless data storage unknown_pack_name:linked_storage $(player_uuid) run data modify storage unknown_pack_name:linked_storage temp set value {item_type:"",item_data:{},count:0}
 $execute unless data storage unknown_pack_name:linked_storage $(player_uuid) run data modify storage unknown_pack_name:linked_storage $(player_uuid) set from storage unknown_pack_name:linked_storage temp

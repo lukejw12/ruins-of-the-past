@@ -1,3 +1,3 @@
-data modify storage unknown_pack_name:temp modifier_data set value {attribute_type:"movement_speed",amount:0.05,operation:"add_multiplied_base",modifier_id:"unknown_pack_name:swift_boost"}
+data modify storage unknown_pack_name:temp modifier_data set value {attribute_type:"burning_time",amount:-0.2,operation:"add_multiplied_base",modifier_id:"unknown_pack_name:blazing_boost"}
 data modify storage unknown_pack_name:temp modifier_data.equipment_slot set from storage unknown_pack_name:temp equipment_slot
 function unknown_pack_name:active/rune_table/attributes/add_attribute_modifier with storage unknown_pack_name:temp modifier_data

@@ -1,6 +1,5 @@
 scoreboard players set #compatible temp 0
 
-# First check if item already has a rune applied
 execute if data storage unknown_pack_name:temp input_item.components."minecraft:lore"[{text:"Hearty Rune:",color:"gray"}] run return 0
 execute if data storage unknown_pack_name:temp input_item.components."minecraft:lore"[{text:"Swift Rune:",color:"gray"}] run return 0
 execute if data storage unknown_pack_name:temp input_item.components."minecraft:lore"[{text:"Luminous Rune:",color:"gray"}] run return 0
@@ -14,7 +13,6 @@ execute if data storage unknown_pack_name:temp input_item.components."minecraft:
 execute if data storage unknown_pack_name:temp input_item.components."minecraft:lore"[{text:"Vampiric Rune:",color:"gray"}] run return 0
 execute if data storage unknown_pack_name:temp input_item.components."minecraft:lore"[{text:"Earthen Rune:",color:"gray"}] run return 0
 
-# Check compatibility based on rune type
 execute if data storage unknown_pack_name:temp {current_rune_type:"luminous"} run function unknown_pack_name:active/rune_table/check_helmet_compatibility
 execute if data storage unknown_pack_name:temp {current_rune_type:"swift"} run function unknown_pack_name:active/rune_table/check_boots_compatibility
 execute if data storage unknown_pack_name:temp {current_rune_type:"hearty"} run function unknown_pack_name:active/rune_table/check_all_armor_compatibility

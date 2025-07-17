@@ -1,1 +1,1 @@
-$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"Requires $(required_levels) Levels",color:"red"},item_model="unknown_pack_name:gui_elements/down_arrow",custom_data={gui_filler:1b,arrow_slot:1b}]
+$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"Requires $(required_levels) Levels",color:"red"},item_model="unknown_pack_name:gui_elements/incompatible",custom_data={gui_filler:1b,arrow_slot:1b}]
