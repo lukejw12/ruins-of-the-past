@@ -15,4 +15,5 @@ data remove storage unknown_pack_name:discovery grid_words
 data remove storage unknown_pack_name:discovery selected
 data remove storage unknown_pack_name:discovery player_has_clicked
 
+# Now only runes (75%) and dig site maps (25%)
 function unknown_pack_name:active/table/discovery/create_word_puzzle

@@ -35,3 +35,6 @@ scoreboard objectives add stored_count dummy
 
 scoreboard objectives add explosion_timer dummy
 data modify storage unknown_pack_name:linked_storage temp set value {}
+
+scoreboard objectives add system_cleared dummy
+scoreboard objectives add incompatible dummy

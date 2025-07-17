@@ -1,0 +1,1 @@
+data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:attribute_modifiers" append value {type:"armor",amount:0.1,operation:"add_multiplied_base",slot:"chest",id:"unknown_pack_name:berserker_boost"}

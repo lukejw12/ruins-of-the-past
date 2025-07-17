@@ -1,0 +1,1 @@
+data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:attribute_modifiers" append value {type:"movement_speed",amount:0.05,operation:"add_multiplied_base",slot:"feet",id:"unknown_pack_name:swift_boost"}

@@ -1,6 +1,7 @@
 scoreboard players set #found_target temp 0
 
 execute if block ~ ~ ~ loom run function unknown_pack_name:core/block/placed/table/place_table
+execute if block ~ ~ ~ furnace run function unknown_pack_name:core/block/placed/table/place_rune_table
 execute if block ~ ~ ~ smoker run function unknown_pack_name:core/block/placed/pottery_wheel/place_pottery_wheel
 execute if block ~ ~ ~ barrier align xyz positioned ~0.5 ~0.5 ~0.5 run function unknown_pack_name:core/block/placed/pot/spawn_pot_display
 execute if block ~ ~ ~ #unknown_pack_name:valid_function run scoreboard players set #found_target temp 1

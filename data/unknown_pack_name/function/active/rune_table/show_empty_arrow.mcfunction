@@ -1,0 +1,1 @@
+$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"",color:"white"},item_model="unknown_pack_name:gui_elements/down_arrow",tooltip_display={hide_tooltip:true},custom_data={gui_filler:1b,arrow_slot:1b}]

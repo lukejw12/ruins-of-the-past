@@ -1,5 +1,5 @@
 execute if score #words_added temp matches 11.. run return 0
-execute store result score #random_index temp run random value 0..23
+execute store result score #random_index temp run random value 0..11
 execute if score #random_index temp matches 0 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[0]
 execute if score #random_index temp matches 1 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[1]
 execute if score #random_index temp matches 2 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[2]
@@ -12,17 +12,5 @@ execute if score #random_index temp matches 8 run data modify storage unknown_pa
 execute if score #random_index temp matches 9 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[9]
 execute if score #random_index temp matches 10 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[10]
 execute if score #random_index temp matches 11 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[11]
-execute if score #random_index temp matches 12 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[12]
-execute if score #random_index temp matches 13 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[13]
-execute if score #random_index temp matches 14 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[14]
-execute if score #random_index temp matches 15 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[15]
-execute if score #random_index temp matches 16 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[16]
-execute if score #random_index temp matches 17 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[17]
-execute if score #random_index temp matches 18 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[18]
-execute if score #random_index temp matches 19 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[19]
-execute if score #random_index temp matches 20 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[20]
-execute if score #random_index temp matches 21 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[21]
-execute if score #random_index temp matches 22 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[22]
-execute if score #random_index temp matches 23 run data modify storage unknown_pack_name:discovery grid_words append from storage unknown_pack_name:temp word_pool[23]
 scoreboard players add #words_added temp 1
 function unknown_pack_name:active/table/discovery/add_random_word_loop

@@ -1,0 +1,1 @@
+data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:attribute_modifiers" append value {type:"oxygen_bonus",amount:10,operation:"add_value",slot:"head",id:"unknown_pack_name:aquatic_oxygen_boost"}

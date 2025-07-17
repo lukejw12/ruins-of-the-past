@@ -1,0 +1,1 @@
+data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:attribute_modifiers" append value {type:"max_health",amount:2,operation:"add_value",slot:"chest",id:"unknown_pack_name:hearty_boost"}
