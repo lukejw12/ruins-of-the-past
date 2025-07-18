@@ -10,7 +10,6 @@ $execute store result score #pot_count temp run data get block ~ ~ ~ Items[{Slot
 execute unless score #recipe_filled temp matches 1 if score #pot_count temp matches 1.. run scoreboard players set #should_check_pot temp 1
 execute if score #recipe_filled temp matches 1 if score #pot_count temp matches 2.. run scoreboard players set #should_check_pot temp 1
 
-
 $execute if score #should_check_pot temp matches 1 if items block ~ ~ ~ container.$(slot) barrier[custom_data~{pot_item:1b}] run function unknown_pack_name:active/pottery_wheel/return_item {slot:$(slot)}
 $execute if score #should_check_pot temp matches 1 if items block ~ ~ ~ container.$(slot) barrier[custom_data~{pot_item:1b}] run return 0
 

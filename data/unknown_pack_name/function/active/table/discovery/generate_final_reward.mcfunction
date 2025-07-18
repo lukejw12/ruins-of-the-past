@@ -1,12 +1,14 @@
 function unknown_pack_name:active/table/recipes/ancient_tablet_craft
 
 execute store result score #shatter_roll temp run random value 1..100
-execute if score #shatter_roll temp matches 1..20 run item replace block ~ ~ ~ container.10 with air
-execute if score #shatter_roll temp matches 1..20 run tellraw @p[distance=..10] [{"text":"The ancient tablet crumbles to dust from the intense research...","color":"red","italic":true}]
-execute unless score #shatter_roll temp matches 1..20 if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{tablet_uses:0} run item replace block ~ ~ ~ container.10 with air
+
+execute if score #shatter_roll temp matches 1..20 run item modify block ~ ~ ~ container.10 {function:set_count,count:-1,add:true}
+execute if score #shatter_roll temp matches 1..20 run tellraw @p[distance=..10] [{"text":"The ancient tablet proved too be to fragile, try again...","color":"red","italic":true}]
+
+execute unless score #shatter_roll temp matches 1..20 if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{tablet_uses:0} run item modify block ~ ~ ~ container.10 {function:set_count,count:-1,add:true}
 
 execute unless data storage unknown_pack_name:discovery rarity if data storage unknown_pack_name:discovery base_rarity run data modify storage unknown_pack_name:discovery rarity set from storage unknown_pack_name:discovery base_rarity
-function unknown_pack_name:active/table/discovery/give_reward
+execute unless score #shatter_roll temp matches 1..20 run function unknown_pack_name:active/table/discovery/give_reward
 
 data remove storage unknown_pack_name:discovery type
 data remove storage unknown_pack_name:discovery subtype

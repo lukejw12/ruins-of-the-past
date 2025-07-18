@@ -1,3 +1,8 @@
+
+scoreboard players add @s tick_counter 1
+
+execute if score @s just_consumed matches 1.. run scoreboard players remove @s just_consumed 1
+
 execute unless block ~ ~ ~ barrel run kill @s
 
 scoreboard players add @s tick_counter 1

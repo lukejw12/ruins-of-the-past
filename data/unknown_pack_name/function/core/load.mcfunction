@@ -32,6 +32,7 @@ scoreboard objectives add recipe_state dummy
 data modify storage unknown_pack_name:storage_pots temp set value {}
 scoreboard objectives add storage_pot_id dummy
 scoreboard objectives add stored_count dummy
+scoreboard objectives add just_consumed dummy
 
 scoreboard objectives add explosion_timer dummy
 data modify storage unknown_pack_name:linked_storage temp set value {}
