@@ -1,0 +1,2 @@
+execute if entity @p[distance=..10,predicate=rotp:holding_shears] run function rotp:core/block/placed/pot/trapped_pot/safe_break
+execute unless entity @p[distance=..10,predicate=rotp:holding_shears] run function rotp:core/block/placed/pot/trapped_pot/explode_on_break

@@ -1,0 +1,9 @@
+execute positioned ~-1 ~ ~-1 run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~-1 ~ ~ run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~-1 ~ ~1 run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~ ~ ~-1 run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~ ~ ~ run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~ ~ ~1 run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~1 ~ ~-1 run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~1 ~ ~ run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position
+execute positioned ~1 ~ ~1 run function rotp:core/block/placed/pot/trapped_pot/start_timer_at_position

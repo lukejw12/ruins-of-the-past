@@ -1,0 +1,1 @@
+function rotp:active/pottery_wheel/build_result_item_with_lore

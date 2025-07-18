@@ -1,0 +1,14 @@
+execute if data storage rotp:discovery {subtype:"hearty"} run data modify storage rotp:temp rune_data set value {rune_name:"Hearty",rune_type:"hearty",equipment_type:"Armor",equipment_slot:"armor",effect:"+1 Heart"}
+execute if data storage rotp:discovery {subtype:"venomous"} run data modify storage rotp:temp rune_data set value {rune_name:"Venomous",rune_type:"venomous",equipment_type:"Weapons",equipment_slot:"weapon",effect:"Poison on Hit"}
+execute if data storage rotp:discovery {subtype:"swift"} run data modify storage rotp:temp rune_data set value {rune_name:"Swift",rune_type:"swift",equipment_type:"Boots",equipment_slot:"feet",effect:"+5% Speed, -20% Jump"}
+execute if data storage rotp:discovery {subtype:"fortified"} run data modify storage rotp:temp rune_data set value {rune_name:"Fortified",rune_type:"fortified",equipment_type:"Armor",equipment_slot:"armor",effect:"+10% Armor Toughness"}
+execute if data storage rotp:discovery {subtype:"blazing"} run data modify storage rotp:temp rune_data set value {rune_name:"Blazing",rune_type:"blazing",equipment_type:"Shields",equipment_slot:"offhand",effect:"-20% Burn Time"}
+execute if data storage rotp:discovery {subtype:"shadowy"} run data modify storage rotp:temp rune_data set value {rune_name:"Shadowy",rune_type:"shadowy",equipment_type:"Helmets",equipment_slot:"head",effect:"Darkness Immunity"}
+execute if data storage rotp:discovery {subtype:"luminous"} run data modify storage rotp:temp rune_data set value {rune_name:"Luminous",rune_type:"luminous",equipment_type:"Helmets",equipment_slot:"head",effect:"Night Vision"}
+execute if data storage rotp:discovery {subtype:"thunderous"} run data modify storage rotp:temp rune_data set value {rune_name:"Thunderous",rune_type:"thunderous",equipment_type:"Swords",equipment_slot:"mainhand",effect:"5% Lightning Chance"}
+execute if data storage rotp:discovery {subtype:"earthen"} run data modify storage rotp:temp rune_data set value {rune_name:"Earthen",rune_type:"earthen",equipment_type:"Helmets & Swords",equipment_slot:"any",effect:"+0.7 Step Height / +0.5% Damage"}
+execute if data storage rotp:discovery {subtype:"aquatic"} run data modify storage rotp:temp rune_data set value {rune_name:"Aquatic",rune_type:"aquatic",equipment_type:"Helmets",equipment_slot:"head",effect:"+10 Oxygen Bonus"}
+execute if data storage rotp:discovery {subtype:"vampiric"} run data modify storage rotp:temp rune_data set value {rune_name:"Vampiric",rune_type:"vampiric",equipment_type:"Swords & Axes",equipment_slot:"weapon",effect:"9% Heal on Hit"}
+execute if data storage rotp:discovery {subtype:"berserker"} run data modify storage rotp:temp rune_data set value {rune_name:"Berserker",rune_type:"berserker",equipment_type:"Armor",equipment_slot:"armor",effect:"+10% Armor"}
+
+function rotp:active/table/discovery/runes/give_rune with storage rotp:temp rune_data

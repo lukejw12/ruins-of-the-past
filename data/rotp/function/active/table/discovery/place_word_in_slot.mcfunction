@@ -1,0 +1,2 @@
+$data modify storage rotp:temp current_word set from storage rotp:discovery grid_words[$(index)]
+$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"",font:"illageralt",color:"dark_gray",italic:false,extra:[{storage:"rotp:temp",nbt:"current_word"}]},custom_data={discovery_result:1b,discovery_level:1,word_puzzle:1b,slot_index:$(index),word_value:"",extra:[{storage:"rotp:temp",nbt:"current_word"}]}]

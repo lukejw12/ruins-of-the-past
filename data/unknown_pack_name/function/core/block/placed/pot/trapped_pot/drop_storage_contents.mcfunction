@@ -1,2 +1,0 @@
-execute store result storage unknown_pack_name:temp storage_id int 1 run scoreboard players get @s storage_pot_id
-function unknown_pack_name:core/block/placed/pot/trapped_pot/get_and_drop_storage with storage unknown_pack_name:temp

@@ -1,1 +1,0 @@
-$data modify storage unknown_pack_name:storage_pots $(storage_id).count set value $(new_count)

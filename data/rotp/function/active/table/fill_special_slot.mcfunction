@@ -1,0 +1,3 @@
+execute unless items block ~ ~ ~ container.10 stone[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.10 * unless items block ~ ~ ~ container.10 stone[custom_data~{ancient_tablet:1b}] run function rotp:active/table/return_item {slot:10}
+execute unless items block ~ ~ ~ container.11 stone[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.11 * unless items block ~ ~ ~ container.11 spyglass run function rotp:active/table/return_item {slot:11}
+$execute unless items block ~ ~ ~ container.$(slot) * run item replace block ~ ~ ~ container.$(slot) with stone[item_model="rotp:gui_elements/$(type)_slot",tooltip_display={hide_tooltip:true},custom_data={gui_filler:1b}]

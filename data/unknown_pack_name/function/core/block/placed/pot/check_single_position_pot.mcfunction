@@ -1,2 +1,0 @@
-$execute if block ~$(x) ~$(y) ~$(z) barrier run scoreboard players set #found_target temp 1
-$execute if score #found_target temp matches 1 run positioned ~$(x) ~$(y) ~$(z) align xyz positioned ~0.5 ~0.5 ~0.5 run function unknown_pack_name:core/block/placed/pot/spawn_pot_display

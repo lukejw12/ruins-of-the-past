@@ -1,0 +1,1 @@
+$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"Incompatible Item",color:"red"},lore=[{text:"This rune cannot be applied",color:"gray",italic:false},{text:"to this type of item.",color:"gray",italic:false}],item_model="rotp:gui_elements/incompatible",custom_data={gui_filler:1b,arrow_slot:1b,incompatible:1b}]

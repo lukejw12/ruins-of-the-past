@@ -1,0 +1,1 @@
+$data modify storage rotp:temp enhanced_item.components."minecraft:attribute_modifiers" append from storage rotp:vanilla_attributes items."$(item_id)"[]

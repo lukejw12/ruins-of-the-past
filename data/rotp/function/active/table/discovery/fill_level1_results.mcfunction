@@ -1,0 +1,1 @@
+function rotp:active/table/discovery/create_word_puzzle

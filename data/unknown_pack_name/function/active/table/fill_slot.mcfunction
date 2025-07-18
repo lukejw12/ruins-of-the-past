@@ -1,2 +1,0 @@
-$execute unless items block ~ ~ ~ container.$(slot) stone[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.$(slot) * run function unknown_pack_name:active/table/return_item {slot:$(slot)}
-$execute unless items block ~ ~ ~ container.$(slot) * run item replace block ~ ~ ~ container.$(slot) with stone[item_model="unknown_pack_name:gui_elements/filled_slot",tooltip_display={hide_tooltip:true},custom_data={gui_filler:1b}]

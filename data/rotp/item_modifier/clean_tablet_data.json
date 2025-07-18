@@ -1,0 +1,9 @@
+{
+    "function": "set_components",
+    "components": {
+        "minecraft:custom_data": {
+            "ancient_tablet": true
+        },
+        "minecraft:item_model": "rotp:items/ancient_tablet"
+    }
+}

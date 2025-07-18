@@ -1,2 +1,0 @@
-$execute unless items block ~ ~ ~ container.$(slot) light_gray_stained_glass_pane[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.$(slot) * unless items block ~ ~ ~ container.$(slot) *[custom_data~{rune_result:1b}] run function unknown_pack_name:active/rune_table/return_item {slot:$(slot)}
-$execute unless items block ~ ~ ~ container.$(slot) * run item replace block ~ ~ ~ container.$(slot) with light_gray_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={gui_filler:1b}]

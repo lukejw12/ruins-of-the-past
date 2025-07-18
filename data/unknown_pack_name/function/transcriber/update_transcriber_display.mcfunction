@@ -1,2 +1,0 @@
-execute store result storage unknown_pack_name:temp stored_levels int 1 run scoreboard players get #stored_levels temp
-function unknown_pack_name:transcriber/apply_transcriber_data with storage unknown_pack_name:temp

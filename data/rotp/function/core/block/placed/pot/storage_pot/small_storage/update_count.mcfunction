@@ -1,0 +1,1 @@
+$data modify storage rotp:storage_pots $(storage_id).count set value $(new_count)

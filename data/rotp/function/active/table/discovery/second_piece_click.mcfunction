@@ -1,0 +1,2 @@
+execute if score #first_click_pos temp = #clicked_pos temp run function rotp:active/table/discovery/deselect_piece
+execute unless score #first_click_pos temp = #clicked_pos temp run function rotp:active/table/discovery/swap_puzzle_pieces

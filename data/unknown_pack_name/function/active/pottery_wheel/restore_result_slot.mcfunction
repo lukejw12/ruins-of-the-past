@@ -1,4 +1,0 @@
-execute if score #clicked_pot_type temp matches 1 run function unknown_pack_name:active/pottery_wheel/build_result_thin with storage unknown_pack_name:temp
-execute if score #clicked_pot_type temp matches 2 run function unknown_pack_name:active/pottery_wheel/build_result_slab with storage unknown_pack_name:temp
-execute if score #clicked_pot_type temp matches 3 run function unknown_pack_name:active/pottery_wheel/build_result_small with storage unknown_pack_name:temp
-execute if score #clicked_pot_type temp matches 4 run function unknown_pack_name:active/pottery_wheel/build_result_square with storage unknown_pack_name:temp

@@ -1,9 +1,0 @@
-{
-    "function": "set_components",
-    "components": {
-        "minecraft:custom_data": {
-            "ancient_tablet": true
-        },
-        "minecraft:item_model": "unknown_pack_name:items/ancient_tablet"
-    }
-}

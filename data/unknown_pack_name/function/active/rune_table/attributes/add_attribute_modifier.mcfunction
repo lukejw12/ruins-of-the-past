@@ -1,1 +1,0 @@
-$data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:attribute_modifiers" append value {type:"$(attribute_type)",amount:$(amount),operation:"$(operation)",slot:"$(equipment_slot)",id:"$(modifier_id)"}

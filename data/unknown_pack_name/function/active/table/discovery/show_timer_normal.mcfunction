@@ -1,2 +1,0 @@
-execute store result storage unknown_pack_name:temp timer_display int 1 run scoreboard players get #timer_seconds temp
-function unknown_pack_name:active/table/discovery/display_timer_normal with storage unknown_pack_name:temp

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "transcriber": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "rotp:transcriber/handle_use"
+  }
+}

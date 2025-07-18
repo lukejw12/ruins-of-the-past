@@ -1,0 +1,2 @@
+execute if entity @s[scores={storage_pot_id=1..}] unless data entity @s data.stored_item.components."minecraft:custom_data".linked_storage run function rotp:core/block/placed/pot/trapped_pot/drop_storage_contents
+function rotp:sub/handle_pot_break

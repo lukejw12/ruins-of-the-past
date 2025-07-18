@@ -1,1 +1,0 @@
-data remove storage unknown_pack_name:temp item_data.components."minecraft:custom_data".display_item

@@ -1,1 +1,0 @@
-function unknown_pack_name:active/table/discovery/create_word_puzzle

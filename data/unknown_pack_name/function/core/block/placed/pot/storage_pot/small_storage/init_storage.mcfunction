@@ -1,2 +1,0 @@
-execute store result storage unknown_pack_name:temp storage_id int 1 run scoreboard players get #next_storage_id temp
-function unknown_pack_name:core/block/placed/pot/storage_pot/small_storage/create_slot with storage unknown_pack_name:temp

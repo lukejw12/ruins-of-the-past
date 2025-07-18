@@ -1,1 +1,0 @@
-item replace block ~ ~ ~ container.22 with barrier[item_name={text:"Incompatible Item",color:"red"},lore=[{text:"This rune cannot be applied",color:"gray",italic:false},{text:"to this type of item.",color:"gray",italic:false}],item_model="unknown_pack_name:gui_elements/incompatible",custom_data={gui_filler:1b,incompatible_result:1b}]

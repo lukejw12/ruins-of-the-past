@@ -1,0 +1,1 @@
+$data modify storage rotp:linked_storage $(player_uuid).count set value $(new_count)

@@ -1,0 +1,1 @@
+data remove storage rotp:temp item_data.components."minecraft:custom_data".display_item

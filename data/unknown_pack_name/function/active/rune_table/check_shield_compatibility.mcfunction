@@ -1,1 +1,0 @@
-execute if data storage unknown_pack_name:temp input_item{id:"minecraft:shield"} run scoreboard players set #compatible temp 1

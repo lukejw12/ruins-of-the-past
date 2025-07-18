@@ -1,1 +1,0 @@
-$data modify storage unknown_pack_name:temp enhanced_item.components."minecraft:attribute_modifiers" append from storage unknown_pack_name:vanilla_attributes items."$(item_id)"[]

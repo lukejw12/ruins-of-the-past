@@ -1,0 +1,1 @@
+$data modify storage rotp:temp stored_item_data set from storage rotp:linked_storage $(player_uuid).item_data
