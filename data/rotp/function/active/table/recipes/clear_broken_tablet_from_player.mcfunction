@@ -37,7 +37,7 @@ function rotp:active/table/recipes/clear_tablet_slot {location:"inventory",slot:
 function rotp:active/table/recipes/clear_tablet_slot {location:"inventory",slot:25}
 function rotp:active/table/recipes/clear_tablet_slot {location:"inventory",slot:26}
 
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:1}] run item replace entity @p[distance=..10] player.cursor with air
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:2}] run item replace entity @p[distance=..10] player.cursor with air
-execute if items entity @p[distance=..10] player.cursor stone[custom_data~{ancient_tablet:1b,discovery_level:3}] run item replace entity @p[distance=..10] player.cursor with air
+execute if items entity @p[distance=..10] player.cursor test_block[custom_data~{ancient_tablet:1b,discovery_level:1}] run item replace entity @p[distance=..10] player.cursor with air
+execute if items entity @p[distance=..10] player.cursor test_block[custom_data~{ancient_tablet:1b,discovery_level:2}] run item replace entity @p[distance=..10] player.cursor with air
+execute if items entity @p[distance=..10] player.cursor test_block[custom_data~{ancient_tablet:1b,discovery_level:3}] run item replace entity @p[distance=..10] player.cursor with air
 
