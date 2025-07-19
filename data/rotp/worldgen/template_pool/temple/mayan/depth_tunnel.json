@@ -1,13 +1,13 @@
 {
-  "name": "rotp:temple/mayan/base",
+  "name": "rotp:temple/mayan/depth_tunnel",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rotp:temple/mayan/base",
-        "processors": "rotp:vines_replace",
+        "location": "rotp:temple/mayan/depth_tunnel",
+        "processors": "rotp:mayan_tunnel_decay",
         "projection": "rigid"
       }
     }

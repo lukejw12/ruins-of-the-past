@@ -1,0 +1,75 @@
+{
+  "name": "rotp:temple/mayan/depth_connector",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_0",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_1",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_2",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_3",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_4",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_5",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_6",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

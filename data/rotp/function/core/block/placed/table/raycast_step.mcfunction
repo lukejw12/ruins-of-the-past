@@ -1,5 +1,6 @@
 scoreboard players set #found_target temp 0
 
+execute if block ~ ~ ~ lodestone run function rotp:core/block/placed/pedestal/spawn_pedestal_display
 execute if block ~ ~ ~ loom run function rotp:core/block/placed/table/place_table
 execute if block ~ ~ ~ furnace run function rotp:core/block/placed/table/place_rune_table
 execute if block ~ ~ ~ smoker run function rotp:core/block/placed/pottery_wheel/place_pottery_wheel

@@ -1,0 +1,1 @@
+execute as @e[tag=pedestal_item_display] at @s run tp @s ~ ~ ~ ~5 ~

@@ -2,7 +2,8 @@ execute if predicate rotp:held_item/table run scoreboard players set @s item_bei
 execute if predicate rotp:held_item/pottery_wheel run scoreboard players set @s item_being_held 1
 execute if predicate rotp:held_item/rune_table run scoreboard players set @s item_being_held 1
 execute if predicate rotp:held_item/pot run scoreboard players set @s item_being_held 2
-execute unless predicate rotp:held_item/table unless predicate rotp:held_item/pottery_wheel unless predicate rotp:held_item/pot unless predicate rotp:held_item/rune_table run scoreboard players set @s item_being_held 0
+execute if predicate rotp:held_item/pedestal run scoreboard players set @s item_being_held 1
+execute unless predicate rotp:held_item/table unless predicate rotp:held_item/pedestal unless predicate rotp:held_item/pottery_wheel unless predicate rotp:held_item/pot unless predicate rotp:held_item/rune_table run scoreboard players set @s item_being_held 0
 execute as @e[type=marker,tag=table,distance=..10] at @s run function rotp:sub/entity_ticks
 execute as @e[type=marker,tag=pottery_wheel,distance=..10] at @s run function rotp:sub/entity_ticks
 execute as @e[type=marker,tag=rune_table,distance=..10] at @s run function rotp:sub/entity_ticks

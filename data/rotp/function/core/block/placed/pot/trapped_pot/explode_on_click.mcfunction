@@ -5,6 +5,6 @@ execute if block ~ ~ ~ barrier run setblock ~ ~ ~ air
 
 function rotp:core/block/placed/pot/trapped_pot/start_chain_timers
 
-summon tnt ~ ~ ~ {fuse:6,explosion_power:1f}
+summon tnt ~ ~ ~ {fuse:6,explosion_power:0f}
 
 scoreboard players reset #current_pot_id temp

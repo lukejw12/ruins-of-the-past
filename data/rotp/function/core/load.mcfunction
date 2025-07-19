@@ -39,5 +39,9 @@ data modify storage rotp:linked_storage temp set value {}
 
 scoreboard objectives add system_cleared dummy
 scoreboard objectives add incompatible dummy
-
+scoreboard objectives add animation_timer dummy
+scoreboard objectives add pottery_wheel_id dummy
+scoreboard objectives add altar_id dummy
 function rotp:active/rune_table/vanilla_attributes/initialize_data
+
+scoreboard objectives add pedestal_id dummy

@@ -1,0 +1,1 @@
+$execute if items block ~ ~ ~ container.$(slot) *[custom_data~{gui_filler:1b}] run item replace block ~ ~ ~ container.$(slot) with air
