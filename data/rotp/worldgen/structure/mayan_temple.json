@@ -1,11 +1,11 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "desert",
+  "biomes": "#rotp:is_jungle",
   "spawn_overrides": {},
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
-  "start_pool": "rotp:dig_site/desert/base",
-  "size": 10,
+  "start_pool": "rotp:temple/mayan/base",
+  "size": 3,
   "start_height": {
     "absolute": -60
   },

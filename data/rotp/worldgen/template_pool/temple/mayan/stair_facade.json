@@ -1,12 +1,12 @@
 {
-  "name": "rotp:dig_site/desert/base",
+  "name": "rotp:temple/mayan/stair_facade",
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 100,
+      "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rotp:dig_site/desert/base",
+        "location": "rotp:temple/mayan/stair_facade",
         "processors": "minecraft:empty",
         "projection": "rigid"
       }

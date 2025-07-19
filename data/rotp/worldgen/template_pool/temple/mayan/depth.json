@@ -1,12 +1,12 @@
 {
-  "name": "rotp:dig_site/desert/base",
+  "name": "rotp:temple/mayan/depth",
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 100,
+      "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "rotp:dig_site/desert/base",
+        "location": "rotp:temple/mayan/depth_connector",
         "processors": "minecraft:empty",
         "projection": "rigid"
       }

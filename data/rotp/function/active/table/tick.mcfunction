@@ -42,4 +42,3 @@ execute if score @s completion_delay matches 1.. run scoreboard players remove @
 execute if score @s completion_delay matches 0 if data storage rotp:puzzle_game {type:"dig_site"} run function rotp:active/table/discovery/generate_dig_site_final_reward
 execute if score @s completion_delay matches 0 unless data storage rotp:puzzle_game {type:"dig_site"} run function rotp:active/table/discovery/generate_final_reward
 execute if score @s completion_delay matches 0 run scoreboard players reset @s completion_delay
-give LukeBroGaming minecraft:barrel[minecraft:container_loot={loot_table:"minecraft:chests/shipwreck_map"}]

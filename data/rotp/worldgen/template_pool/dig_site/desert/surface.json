@@ -3,7 +3,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 20,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rotp:dig_site/desert/surface_connector",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 5,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rotp:dig_site/desert/surface_connector_1",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 40,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rotp:dig_site/desert/surface_connector_2",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "weight": 3,
+      "weight": 70,
       "element": {
         "element_type": "minecraft:empty_pool_element"
       }
