@@ -1,7 +1,7 @@
 scoreboard players operation #current_pedestal_id temp = @s pedestal_id
 execute as @e[tag=pedestal_marker] if score @s pedestal_id = #current_pedestal_id temp run tag @s add target_marker
 
-execute at @e[tag=target_marker,limit=1] run summon item_display ~ ~1.2 ~ {item:{id:"stone",count:1},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f]},Tags:["pedestal_item_display","needs_id"]}
+execute at @e[tag=target_marker,limit=1] align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~1 ~ {item:{id:"stone",count:1},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},Tags:["pedestal_item_display","needs_id"]}
 
 execute as @e[tag=needs_id,distance=..5] run data modify entity @s item set from entity @e[tag=pedestal_interaction,limit=1,sort=nearest] data.stored_item
 

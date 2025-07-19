@@ -5,7 +5,7 @@
     "predicate": {
         "slots": {
             "weapon.*": {
-                "items": "lodestone"
+                "items": "stonecutter"
             }
         }
     }
