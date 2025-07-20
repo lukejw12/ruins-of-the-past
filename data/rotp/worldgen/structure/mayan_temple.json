@@ -1,15 +1,15 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#rotp:is_jungle",
+  "biomes": "minecraft:plains",
   "spawn_overrides": {},
   "step": "surface_structures",
-  "terrain_adaptation": "beard_thin",
+  "terrain_adaptation": "none",
   "start_pool": "rotp:temple/mayan/base",
-  "size": 4,
+  "size": 10,
   "start_height": {
-    "absolute": -60
+    "absolute": 80
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
-  "max_distance_from_center": 80,
+  "max_distance_from_center": 16,
   "use_expansion_hack": false
 }

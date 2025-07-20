@@ -48,3 +48,10 @@ scoreboard objectives add pedestal_id dummy
 scoreboard objectives add nested_pedestal_id dummy
 scoreboard objectives add tiny_item_id dummy
 scoreboard objectives add table_id dummy
+
+scoreboard objectives add dynamic_lighting trigger
+scoreboard objectives add light_level dummy
+scoreboard objectives add previous_light dummy
+scoreboard objectives add light_update_timer dummy
+scoreboard objectives add previous_sky dummy
+gamerule commandBlockOutput false

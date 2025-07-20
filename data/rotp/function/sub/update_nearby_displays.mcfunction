@@ -1,0 +1,1 @@
+execute as @e[type=item_display,distance=..10] at @s run function rotp:sub/check_light_change

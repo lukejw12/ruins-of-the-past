@@ -8,6 +8,7 @@ execute as @e[type=marker,tag=table,distance=..10] at @s run function rotp:sub/e
 execute as @e[type=marker,tag=pottery_wheel,distance=..10] at @s run function rotp:sub/entity_ticks
 execute as @e[type=marker,tag=rune_table,distance=..10] at @s run function rotp:sub/entity_ticks
 function rotp:core/block/placed/pedestal/tick
+scoreboard players enable @s dynamic_lighting
 
 
 

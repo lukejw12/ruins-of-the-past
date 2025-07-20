@@ -66,9 +66,12 @@
       }
     },
     {
-      "weight": 20,
+      "weight": 80,
       "element": {
-        "element_type": "minecraft:empty_pool_element"
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_7",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
       }
     }
   ]

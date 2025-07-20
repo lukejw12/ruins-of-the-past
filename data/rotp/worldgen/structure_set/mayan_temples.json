@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "rotp:mayan_temple",
+      "structure": "rotp:mayan_temple", 
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "spacing": 64,
-    "separation": 16,
+    "spacing": 8,
+    "separation": 4,
     "salt": 987654321
   }
 }
