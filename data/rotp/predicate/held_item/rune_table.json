@@ -5,7 +5,11 @@
     "predicate": {
         "slots": {
             "weapon.*": {
-                "items": "furnace"
+                "components": {
+                    "custom_data": {
+                        "runic_altar_placable": true
+                    }
+                }
             }
         }
     }

@@ -5,7 +5,11 @@
     "predicate": {
         "slots": {
             "weapon.*": {
-                "items": "stonecutter"
+                "components": {
+                    "custom_data": {
+                        "pedestal_placable": true
+                    }
+                }
             }
         }
     }

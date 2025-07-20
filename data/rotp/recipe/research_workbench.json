@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DDD"
+  ],
+  "key": {
+    "A": "minecraft:smooth_stone",
+    "B": "minecraft:oak_planks",
+    "C": "minecraft:cartography_table",
+    "D": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:loom",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Research Workbench",
+        "color": "white"
+      },
+      "minecraft:item_model": "rotp:blocks/handheld/research_workbench",
+      "minecraft:custom_data": {
+        "research_workbench_placable": true
+      }
+    },
+    "count": 1
+  }
+}

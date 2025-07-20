@@ -7,6 +7,9 @@ execute unless predicate rotp:held_item/table unless predicate rotp:held_item/pe
 execute as @e[type=marker,tag=table,distance=..10] at @s run function rotp:sub/entity_ticks
 execute as @e[type=marker,tag=pottery_wheel,distance=..10] at @s run function rotp:sub/entity_ticks
 execute as @e[type=marker,tag=rune_table,distance=..10] at @s run function rotp:sub/entity_ticks
+function rotp:core/block/placed/pedestal/tick
+
+
 
 execute if items entity @s inventory.* *[custom_data~{gui_filler:1b}] run function rotp:sub/item_clear/check_slot
 execute if items entity @s inventory.* *[custom_data~{discovery_result:1b}] run function rotp:sub/item_clear/check_slot
@@ -19,6 +22,8 @@ execute if items entity @s hotbar.* *[custom_data~{recipe_result:1b}] run functi
 execute if items entity @s hotbar.* *[custom_data~{final_reward:1b}] run function rotp:sub/item_clear/check_slot
 
 execute if items entity @s inventory.* test_block[custom_data~{ancient_tablet:1b,discovery_level:1}] run function rotp:sub/item_clear/check_slot
+execute if items entity @s inventory.* test_block[custom_data~{ancient_tablet:1b,discovery_level:2}] run function rotp:sub/item_clear/check_slot
+execute if items entity @s inventory.* test_block[custom_data~{ancient_tablet:1b,discovery_level:3}] run function rotp:sub/item_clear/check_slot
 execute if items entity @s inventory.* test_block[custom_data~{ancient_tablet:1b,tablet_uses:3}] run function rotp:sub/item_clear/check_slot
 execute if items entity @s hotbar.* test_block[custom_data~{ancient_tablet:1b,discovery_level:1}] run function rotp:sub/item_clear/check_slot
 execute if items entity @s hotbar.* test_block[custom_data~{ancient_tablet:1b,tablet_uses:3}] run function rotp:sub/item_clear/check_slot

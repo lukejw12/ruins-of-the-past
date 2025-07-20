@@ -1,5 +1,5 @@
 data modify storage rotp:puzzle_game puzzle_active set value 0b
-tellraw @p[distance=..10] [{"text":"Time's up! The ancient tablet crumbles to dust...","color":"red","bold":true}]
+title @p[distance=..10] actionbar [{"text":"Time's up! The ancient tablet crumbles to dust...","color":"red","bold":true}]
 item replace block ~ ~ ~ container.10 with air
 function rotp:active/table/recipes/ancient_tablet_clear_results
 data remove storage rotp:discovery type

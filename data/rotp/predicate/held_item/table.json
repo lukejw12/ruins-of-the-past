@@ -5,7 +5,11 @@
     "predicate": {
         "slots": {
             "weapon.*": {
-                "items": "loom"
+                "components": {
+                    "custom_data": {
+                        "research_workbench_placable": true
+                    }
+                }
             }
         }
     }

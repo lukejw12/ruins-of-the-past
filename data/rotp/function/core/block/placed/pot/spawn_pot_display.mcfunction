@@ -2,7 +2,7 @@ execute store result score #next_pot_id temp run random value 1000..9999
 execute store result score #next_storage_id temp run random value 10000..99999
 
 execute store result score #player_rotation temp run data get entity @p[distance=..10,limit=1] Rotation[0]
-
+# Mental Notes:
 # South: 45.0° to -44.9° (wrapping around 180°/-180°)
 # West: 135.0° to 45.1°
 # North: -135.1° to -45.1°

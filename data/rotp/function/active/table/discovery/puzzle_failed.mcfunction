@@ -5,4 +5,4 @@ data remove storage rotp:discovery target_word
 data remove storage rotp:discovery grid_words
 data remove storage rotp:discovery puzzle_active
 
-tellraw @p [{"text":"The ancient tablet crumbles to dust as your final guess proves incorrect...","color":"red","italic":true}]
+title @p actionbar [{"text":"The ancient tablet crumbles to dust as your final guess proves incorrect...","color":"red","italic":true}]

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "PPC",
+    "PEC",
+    "CCC"
+  ],
+  "key": {
+    "P": "minecraft:paper",
+    "C": "minecraft:leather",
+    "E": "minecraft:experience_bottle"
+  },
+  "result": {
+    "id": "minecraft:stone",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Transcriber",
+        "color": "white"
+      },
+      "minecraft:lore": [
+        {
+          "text": "Experience Levels Stored",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "0/150",
+          "color": "green",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "rotp:items/transcriber",
+      "minecraft:custom_data": {
+        "transcriber": true,
+        "stored_levels": 0,
+        "max_levels": 150
+      }
+    },
+    "count": 1
+  }
+}

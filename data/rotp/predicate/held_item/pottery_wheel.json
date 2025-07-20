@@ -5,7 +5,11 @@
     "predicate": {
         "slots": {
             "weapon.*": {
-                "items": "smoker"
+                "components": {
+                    "custom_data": {
+                        "pottery_wheel_placable": true
+                    }
+                }
             }
         }
     }

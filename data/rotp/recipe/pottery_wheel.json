@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "AAA",
+    "BBB",
+    "C C"
+  ],
+  "key": {
+    "A": "minecraft:smooth_stone_slab",
+    "B": "minecraft:oak_planks",
+    "C": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:smoker",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Pottery Wheel",
+        "color": "white"
+      },
+      "minecraft:item_model": "rotp:blocks/handheld/pottery_wheel",
+      "minecraft:custom_data": {
+        "pottery_wheel_placable": true
+      }
+    },
+    "count": 1
+  }
+}

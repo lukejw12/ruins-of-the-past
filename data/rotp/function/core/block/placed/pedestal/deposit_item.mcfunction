@@ -2,6 +2,8 @@ execute unless data entity @p[distance=..10] SelectedItem.id run return 0
 execute if data entity @s data.stored_item.id run return 0
 
 data modify storage rotp:temp player_item set from entity @p[distance=..10] SelectedItem
+execute if data storage rotp:temp player_item.components."minecraft:custom_data".pedestal_placable run function rotp:core/block/placed/pedestal/spawn_nested_pedestal
+execute if data storage rotp:temp player_item.components."minecraft:custom_data".pedestal_placable run return 0
 
 data modify entity @s data.stored_item set from storage rotp:temp player_item
 data modify entity @s data.stored_item.count set value 1
@@ -14,6 +16,6 @@ execute if score #player_count temp matches 0 run item replace entity @p[distanc
 
 function rotp:core/block/placed/pedestal/spawn_floating_item
 
-particle dust_plume ~ ~1 ~ 0.2 0.2 0.2 0.05 5
+particle dust_plume ~ ~1 ~ 0.1 0.1 0.1 0.05 5
 
 scoreboard players reset #player_count temp

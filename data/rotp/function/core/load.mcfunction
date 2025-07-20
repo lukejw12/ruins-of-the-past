@@ -45,3 +45,6 @@ scoreboard objectives add altar_id dummy
 function rotp:active/rune_table/vanilla_attributes/initialize_data
 
 scoreboard objectives add pedestal_id dummy
+scoreboard objectives add nested_pedestal_id dummy
+scoreboard objectives add tiny_item_id dummy
+scoreboard objectives add table_id dummy

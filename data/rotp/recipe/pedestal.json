@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "ABA",
+    " C ",
+    "ADA"
+  ],
+  "key": {
+    "A": "minecraft:polished_tuff_slab",
+    "B": "minecraft:red_carpet",
+    "C": "minecraft:polished_tuff",
+    "D": "minecraft:polished_tuff"
+    },
+  "result": {
+    "id": "minecraft:stonecutter",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Pedestal",
+        "color": "white"
+      },
+      "minecraft:item_model": "rotp:blocks/handheld/pedestal",
+      "minecraft:custom_data": {
+        "pedestal_placable": true
+      }
+    },
+    "count": 1
+  }
+}

@@ -1,7 +1,7 @@
 scoreboard players reset #stop temp
 function rotp:active/table/fill_gui_slots
 kill @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{gui_filler:1b}}}}]
-execute unless block ~ ~ ~ barrel run kill @s
+execute unless block ~ ~ ~ barrel run function rotp:active/table/cleanup_table
 execute if items block ~ ~ ~ container.10 test_block[custom_data~{ancient_tablet:1b}] run scoreboard players set #tablet_present temp 1
 execute unless items block ~ ~ ~ container.10 test_block[custom_data~{ancient_tablet:1b}] run scoreboard players set #tablet_present temp 0
 execute if score #tablet_present temp matches 0 if score #previous_tablet temp matches 1 run function rotp:active/table/recipes/ancient_tablet_clear_results
