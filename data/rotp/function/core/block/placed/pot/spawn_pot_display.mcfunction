@@ -1,7 +1,6 @@
 execute store result score #next_pot_id temp run random value 1000..9999
 execute store result score #next_storage_id temp run random value 10000..99999
-
-execute store result score #player_rotation temp run data get entity @p[distance=..10,limit=1] Rotation[0]
+execute store result score #player_rotation temp run data get entity @s Rotation[0]
 # Mental Notes:
 # South: 45.0° to -44.9° (wrapping around 180°/-180°)
 # West: 135.0° to 45.1°
@@ -14,7 +13,7 @@ execute if score #player_rotation temp matches 136..180 run scoreboard players s
 execute if score #player_rotation temp matches -180..-136 run scoreboard players set #player_rotation temp 2
 execute if score #player_rotation temp matches -135..-46 run scoreboard players set #player_rotation temp 3
 
-data modify storage rotp:temp original_item_data set from entity @p[distance=..10,limit=1] SelectedItem
+data modify storage rotp:temp original_item_data set from entity @s SelectedItem
 data modify storage rotp:temp original_item_data.count set value 1
 data modify storage rotp:temp pot_data set from storage rotp:temp original_item_data.components."minecraft:custom_data"
 

@@ -2,10 +2,10 @@ execute unless score @s has_result matches 0.. run scoreboard players set @s has
 
 scoreboard players set #current_has_result temp 0
 
-execute if items block ~ ~ ~ container.4 barrier[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
-execute if items block ~ ~ ~ container.5 barrier[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
-execute if items block ~ ~ ~ container.6 barrier[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
-execute if items block ~ ~ ~ container.7 barrier[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
+execute if items block ~ ~ ~ container.4 structure_void[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
+execute if items block ~ ~ ~ container.5 structure_void[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
+execute if items block ~ ~ ~ container.6 structure_void[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
+execute if items block ~ ~ ~ container.7 structure_void[custom_data~{display_item:1b}] run scoreboard players add #current_has_result temp 1
 
 execute if score @s has_result matches 4 if score #current_has_result temp matches 0..3 run function rotp:active/pottery_wheel/consume_crafting_materials
 

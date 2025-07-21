@@ -15,9 +15,9 @@ execute if score #found_target temp matches 1 run return 0
 execute if block ~ ~ ~ smoker run function rotp:core/block/placed/pottery_wheel/place_pottery_wheel
 execute if block ~ ~ ~ smoker run scoreboard players set #found_target temp 1
 execute if score #found_target temp matches 1 run return 0
-execute if block ~ ~ ~ barrier if entity @e[type=marker,tag=pedestal_marker,distance=..0.5] run return 0
-execute if block ~ ~ ~ barrier align xyz positioned ~0.5 ~0.5 ~0.5 run function rotp:core/block/placed/pot/spawn_pot_display
-execute if block ~ ~ ~ barrier run scoreboard players set #found_target temp 1
+execute if block ~ ~ ~ structure_void if entity @e[type=marker,tag=pedestal_marker,distance=..0.5] run return 0
+execute if block ~ ~ ~ structure_void align xyz positioned ~0.5 ~0.5 ~0.5 run function rotp:core/block/placed/pot/spawn_pot_display
+execute if block ~ ~ ~ structure_void run scoreboard players set #found_target temp 1
 execute if score #found_target temp matches 1 run return 0
 
 function rotp:core/block/placed/table/check_six_faces

@@ -11,7 +11,7 @@ function rotp:core/block/placed/pot/storage_pot/small_storage/set_storage with s
 
 scoreboard players operation #player_count temp -= #to_store temp
 execute if score #player_count temp matches 1.. run function rotp:core/block/placed/pot/storage_pot/small_storage/update_player_count
-execute if score #player_count temp matches 0 run item replace entity @p[distance=..10] weapon.mainhand with air
+execute if score #player_count temp matches 0 run item replace entity @p[distance=..10,tag=current_player] weapon.mainhand with air
 
 particle dust_plume ~ ~1 ~ 0 0.6 0 0.07 3
 

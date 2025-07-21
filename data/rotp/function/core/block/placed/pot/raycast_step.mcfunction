@@ -1,7 +1,6 @@
-data modify storage rotp:temp pot_data set from entity @p[distance=..10,limit=1] SelectedItem.components."minecraft:custom_data"
-
-execute if block ~ ~ ~ barrier align xyz positioned ~0.5 ~0.5 ~0.5 run function rotp:core/block/placed/pot/spawn_pot_display
-execute if block ~ ~ ~ barrier run return 0
+data modify storage rotp:temp pot_data set from entity @s SelectedItem.components."minecraft:custom_data"
+execute if block ~ ~ ~ structure_void align xyz positioned ~0.5 ~0.5 ~0.5 run function rotp:core/block/placed/pot/spawn_pot_display
+execute if block ~ ~ ~ structure_void run return 0
 
 function rotp:core/block/placed/pot/check_six_faces_pot
 execute if score #found_target temp matches 1 run return 0
