@@ -1,3 +1,5 @@
+execute as @e[type=interaction,distance=..20] at @s run function rotp:sub/interaction_tick
+
 execute if predicate rotp:held_item/table run scoreboard players set @s item_being_held 1
 execute if predicate rotp:held_item/pottery_wheel run scoreboard players set @s item_being_held 1
 execute if predicate rotp:held_item/rune_table run scoreboard players set @s item_being_held 1

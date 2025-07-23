@@ -12,5 +12,4 @@ execute as @e[type=item,distance=..1,limit=1,sort=nearest] run function rotp:sub
 execute as @e[scores={pot_id=0..}] if score @s pot_id = #current_pot_id temp run kill @s
 
 execute if block ~ ~ ~ barrier run setblock ~ ~ ~ air
-
 scoreboard players reset #current_pot_id temp

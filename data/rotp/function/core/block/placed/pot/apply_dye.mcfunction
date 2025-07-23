@@ -1,0 +1,34 @@
+data modify storage rotp:temp dye_item set from entity @p[distance=..10] SelectedItem
+
+execute if data storage rotp:temp dye_item{id:"minecraft:white_dye"} run scoreboard players set #dye_color temp 16777215
+execute if data storage rotp:temp dye_item{id:"minecraft:orange_dye"} run scoreboard players set #dye_color temp 16744448
+execute if data storage rotp:temp dye_item{id:"minecraft:magenta_dye"} run scoreboard players set #dye_color temp 16711935
+execute if data storage rotp:temp dye_item{id:"minecraft:light_blue_dye"} run scoreboard players set #dye_color temp 11393254
+execute if data storage rotp:temp dye_item{id:"minecraft:yellow_dye"} run scoreboard players set #dye_color temp 16776960
+execute if data storage rotp:temp dye_item{id:"minecraft:lime_dye"} run scoreboard players set #dye_color temp 8388352
+execute if data storage rotp:temp dye_item{id:"minecraft:pink_dye"} run scoreboard players set #dye_color temp 16761035
+execute if data storage rotp:temp dye_item{id:"minecraft:gray_dye"} run scoreboard players set #dye_color temp 8421504
+execute if data storage rotp:temp dye_item{id:"minecraft:light_gray_dye"} run scoreboard players set #dye_color temp 12632256
+execute if data storage rotp:temp dye_item{id:"minecraft:cyan_dye"} run scoreboard players set #dye_color temp 35723
+execute if data storage rotp:temp dye_item{id:"minecraft:purple_dye"} run scoreboard players set #dye_color temp 13369599
+execute if data storage rotp:temp dye_item{id:"minecraft:blue_dye"} run scoreboard players set #dye_color temp 255
+execute if data storage rotp:temp dye_item{id:"minecraft:brown_dye"} run scoreboard players set #dye_color temp 9127187
+execute if data storage rotp:temp dye_item{id:"minecraft:green_dye"} run scoreboard players set #dye_color temp 32768
+execute if data storage rotp:temp dye_item{id:"minecraft:red_dye"} run scoreboard players set #dye_color temp 16711680
+execute if data storage rotp:temp dye_item{id:"minecraft:black_dye"} run scoreboard players set #dye_color temp 4210752
+execute store result storage rotp:temp dye_color int 1 run scoreboard players get #dye_color temp
+
+function rotp:core/block/placed/pot/update_pot_displays
+
+execute store result score #temp_count temp run data get storage rotp:temp dye_item.count
+scoreboard players remove #temp_count temp 1
+execute if score #temp_count temp matches 0 run item replace entity @p[distance=..10] weapon.mainhand with air
+execute if score #temp_count temp matches 1.. run item modify entity @p[distance=..10] weapon.mainhand {function:set_count,count:-1,add:true}
+
+particle happy_villager ~ ~0.5 ~ 0.3 0.3 0.3 0.1 5
+
+execute store result storage rotp:temp current_pot_id int 1 run scoreboard players get @s pot_id
+data modify entity @s data.stored_item.components."minecraft:custom_data".dyed set value 1b
+execute store result entity @s data.stored_item.components."minecraft:dyed_color" int 1 run scoreboard players get #dye_color temp
+
+scoreboard players reset #temp_count temp

@@ -5,3 +5,5 @@
 
 #execute if data storage rotp:temp broken_pot_data.pot_type run data modify entity @s Item.components."minecraft:item_model" set value "rotp:pottery/pot_item"
 data modify entity @s Item set from storage rotp:temp broken_pot_data
+execute if data storage rotp:temp broken_pot_data.components."minecraft:custom_data".dyed run function rotp:sub/restore_dyed_pot_item
+execute unless data storage rotp:temp broken_pot_data.components."minecraft:custom_data".dyed run data modify entity @s Item set from storage rotp:temp broken_pot_data
