@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "get_glow_ink_sac": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:glow_ink_sac"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "rotp:vibrant_dyes/vibrant_white_dye",
+      "rotp:vibrant_dyes/vibrant_orange_dye",
+      "rotp:vibrant_dyes/vibrant_magenta_dye",
+      "rotp:vibrant_dyes/vibrant_light_blue_dye",
+      "rotp:vibrant_dyes/vibrant_yellow_dye",
+      "rotp:vibrant_dyes/vibrant_lime_dye",
+      "rotp:vibrant_dyes/vibrant_pink_dye",
+      "rotp:vibrant_dyes/vibrant_gray_dye",
+      "rotp:vibrant_dyes/vibrant_light_gray_dye",
+      "rotp:vibrant_dyes/vibrant_cyan_dye",
+      "rotp:vibrant_dyes/vibrant_purple_dye",
+      "rotp:vibrant_dyes/vibrant_blue_dye",
+      "rotp:vibrant_dyes/vibrant_brown_dye",
+      "rotp:vibrant_dyes/vibrant_green_dye",
+      "rotp:vibrant_dyes/vibrant_red_dye",
+      "rotp:vibrant_dyes/vibrant_black_dye"
+    ]
+  }
+}

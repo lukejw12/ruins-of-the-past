@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:white_dye",
+    "#rotp:glow_materials"
+  ],
+  "result": {
+    "id": "minecraft:white_dye",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Vibrant White Dye",
+        "color": "white"
+      },
+      "minecraft:lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "Applies to:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Pottery",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "rotp:items/vibrant_dyes/vibrant_white_dye",
+      "minecraft:custom_data": {
+        "vibrant_white_dye": true
+      }
+    }
+  }
+}

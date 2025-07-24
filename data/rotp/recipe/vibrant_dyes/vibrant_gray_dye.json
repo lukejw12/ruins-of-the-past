@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gray_dye",
+    "#rotp:glow_materials"
+  ],
+  "result": {
+    "id": "minecraft:gray_dye",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Vibrant Gray Dye",
+        "color": "white"
+      },
+      "minecraft:lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "Applies to:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Pottery",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "rotp:items/vibrant_dyes/vibrant_gray_dye",
+      "minecraft:custom_data": {
+        "vibrant_gray_dye": true
+      }
+    }
+  }
+}
