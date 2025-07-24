@@ -23,6 +23,7 @@
     "minecraft:shelter_pottery_sherd",
     "minecraft:skull_pottery_sherd",
     "minecraft:snort_pottery_sherd",
-    "minecraft:brick"
+    "minecraft:brick",
+    "repeating_command_block"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "get_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:brick"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "rotp:sherds/blank_pottery_sherd"
+    ]
+  }
+}

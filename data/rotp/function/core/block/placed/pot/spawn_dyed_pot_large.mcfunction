@@ -1,0 +1,3 @@
+execute store result storage rotp:temp spawn_dye_color int 1 run data get storage rotp:temp original_item_data.components."minecraft:dyed_color"
+summon item_display ~ ~ ~ {item:{id:"barrier",components:{item_model:"rotp:pottery/tint/pottery/pot_type_large"}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},Tags:["pot_display","pot_base","needs_id"]}
+execute as @e[tag=pot_base,tag=needs_id,distance=..1,limit=1] run data modify entity @s item.components."minecraft:dyed_color" set from storage rotp:temp spawn_dye_color

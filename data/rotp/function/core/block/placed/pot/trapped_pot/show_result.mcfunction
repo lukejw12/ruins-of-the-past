@@ -17,3 +17,5 @@ function rotp:core/block/placed/pot/trapped_pot/build_thin with storage rotp:tem
 function rotp:core/block/placed/pot/trapped_pot/build_slab with storage rotp:temp
 function rotp:core/block/placed/pot/trapped_pot/build_small with storage rotp:temp
 function rotp:core/block/placed/pot/trapped_pot/build_square with storage rotp:temp
+function rotp:core/block/placed/pot/trapped_pot/build_vase with storage rotp:temp
+function rotp:core/block/placed/pot/trapped_pot/build_large with storage rotp:temp

@@ -22,3 +22,10 @@ $execute if items block ~ ~ ~ container.$(slot) shelter_pottery_sherd run scoreb
 $execute if items block ~ ~ ~ container.$(slot) skull_pottery_sherd run scoreboard players set #$(direction)_material temp 22
 $execute if items block ~ ~ ~ container.$(slot) snort_pottery_sherd run scoreboard players set #$(direction)_material temp 23
 $execute if items block ~ ~ ~ container.$(slot) brick run scoreboard players set #$(direction)_material temp 24
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{bot_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 25
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{pot_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 26
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{ingot_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 27
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{tnt_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 28
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{creeper_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 29
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{chicken_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 30
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{lock_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 31

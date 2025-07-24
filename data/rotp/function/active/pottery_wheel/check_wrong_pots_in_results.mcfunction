@@ -9,3 +9,9 @@ execute if items block ~ ~ ~ container.6 structure_void[custom_data~{pot_item:1b
 
 execute if items block ~ ~ ~ container.7 structure_void[custom_data~{pot_item:1b}] unless items block ~ ~ ~ container.7 structure_void[custom_data~{pot_type:"square"}] run function rotp:active/pottery_wheel/return_item {slot:7}
 execute if items block ~ ~ ~ container.7 structure_void[custom_data~{pot_item:1b}] unless items block ~ ~ ~ container.7 structure_void[custom_data~{pot_type:"square"}] run function rotp:active/pottery_wheel/consume_crafting_materials
+
+execute if items block ~ ~ ~ container.13 structure_void[custom_data~{pot_item:1b}] unless items block ~ ~ ~ container.13 structure_void[custom_data~{pot_type:"large"}] run function rotp:active/pottery_wheel/return_item {slot:13}
+execute if items block ~ ~ ~ container.13 structure_void[custom_data~{pot_item:1b}] unless items block ~ ~ ~ container.13 structure_void[custom_data~{pot_type:"large"}] run function rotp:active/pottery_wheel/consume_crafting_materials
+
+execute if items block ~ ~ ~ container.14 structure_void[custom_data~{pot_item:1b}] unless items block ~ ~ ~ container.14 structure_void[custom_data~{pot_type:"vase"}] run function rotp:active/pottery_wheel/return_item {slot:14}
+execute if items block ~ ~ ~ container.14 structure_void[custom_data~{pot_item:1b}] unless items block ~ ~ ~ container.14 structure_void[custom_data~{pot_type:"vase"}] run function rotp:active/pottery_wheel/consume_crafting_materials

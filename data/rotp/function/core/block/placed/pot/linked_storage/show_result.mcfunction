@@ -17,3 +17,5 @@ function rotp:core/block/placed/pot/linked_storage/build_thin with storage rotp:
 function rotp:core/block/placed/pot/linked_storage/build_slab with storage rotp:temp
 function rotp:core/block/placed/pot/linked_storage/build_small with storage rotp:temp
 function rotp:core/block/placed/pot/linked_storage/build_square with storage rotp:temp
+function rotp:core/block/placed/pot/linked_storage/build_large with storage rotp:temp
+function rotp:core/block/placed/pot/linked_storage/build_vase with storage rotp:temp

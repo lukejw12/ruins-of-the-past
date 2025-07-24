@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "get_blank_sherd": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:chain_command_block"
+            ],
+            "components": {
+              "minecraft:custom_data": {
+                "blank_pottery_sherd": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "rotp:sherds/bot_pottery_sherd",
+      "rotp:sherds/pot_pottery_sherd",
+      "rotp:sherds/ingot_pottery_sherd",
+      "rotp:sherds/tnt_pottery_sherd",
+      "rotp:sherds/creeper_pottery_sherd",
+      "rotp:sherds/chicken_pottery_sherd",
+      "rotp:sherds/lock_pottery_sherd"
+    ]
+  }
+}

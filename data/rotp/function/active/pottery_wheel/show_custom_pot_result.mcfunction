@@ -17,3 +17,5 @@ function rotp:active/pottery_wheel/build_result_thin with storage rotp:temp
 function rotp:active/pottery_wheel/build_result_slab with storage rotp:temp
 function rotp:active/pottery_wheel/build_result_small with storage rotp:temp
 function rotp:active/pottery_wheel/build_result_square with storage rotp:temp
+function rotp:active/pottery_wheel/build_result_large with storage rotp:temp
+function rotp:active/pottery_wheel/build_result_vase with storage rotp:temp

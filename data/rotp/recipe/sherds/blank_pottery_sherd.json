@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:brick",
+    "minecraft:brick",
+    "minecraft:brick",
+    "minecraft:brick",
+    "minecraft:brick",
+    "minecraft:brick",
+    "minecraft:brick"
+  ],
+  "result": {
+    "id": "minecraft:chain_command_block",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Blank Pottery Sherd",
+        "color": "white"
+      },
+      "minecraft:item_model": "rotp:items/sherds/blank_pottery_sherd",
+      "minecraft:custom_data": {
+        "blank_pottery_sherd": true
+      }
+    }
+  }
+}

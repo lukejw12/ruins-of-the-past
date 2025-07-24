@@ -12,6 +12,8 @@ execute if score #recipe_was_valid temp matches 1 if score #clicked_pot_type tem
 execute if score #recipe_was_valid temp matches 1 if score #clicked_pot_type temp matches 2 if data storage rotp:temp {player_pot_type:"slab"} run function rotp:active/pottery_wheel/handle_same_type_click
 execute if score #recipe_was_valid temp matches 1 if score #clicked_pot_type temp matches 3 if data storage rotp:temp {player_pot_type:"small"} run function rotp:active/pottery_wheel/handle_same_type_click
 execute if score #recipe_was_valid temp matches 1 if score #clicked_pot_type temp matches 4 if data storage rotp:temp {player_pot_type:"square"} run function rotp:active/pottery_wheel/handle_same_type_click
+execute if score #recipe_was_valid temp matches 1 if score #clicked_pot_type temp matches 5 if data storage rotp:temp {player_pot_type:"large"} run function rotp:active/pottery_wheel/handle_same_type_click
+execute if score #recipe_was_valid temp matches 1 if score #clicked_pot_type temp matches 6 if data storage rotp:temp {player_pot_type:"vase"} run function rotp:active/pottery_wheel/handle_same_type_click
 
 execute unless score #same_type_handled temp matches 1 run function rotp:active/pottery_wheel/handle_different_type_click
 

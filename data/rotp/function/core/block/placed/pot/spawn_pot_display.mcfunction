@@ -30,12 +30,17 @@ execute if data storage rotp:temp pot_data{pot_type:"small"} if data storage rot
 
 execute if data storage rotp:temp pot_data{pot_type:"square"} unless data storage rotp:temp pot_data.dyed run summon item_display ~ ~ ~ {item:{id:"barrier",components:{item_model:"rotp:pottery/pot_type_square"}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},Tags:["pot_display","pot_base","needs_id"]}
 execute if data storage rotp:temp pot_data{pot_type:"square"} if data storage rotp:temp pot_data.dyed run function rotp:core/block/placed/pot/spawn_dyed_pot_square
+execute if data storage rotp:temp pot_data{pot_type:"large"} unless data storage rotp:temp pot_data.dyed run summon item_display ~ ~ ~ {item:{id:"barrier",components:{item_model:"rotp:pottery/pot_type_large"}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},Tags:["pot_display","pot_base","needs_id"]}
+execute if data storage rotp:temp pot_data{pot_type:"large"} if data storage rotp:temp pot_data.dyed run function rotp:core/block/placed/pot/spawn_dyed_pot_large
 
+execute if data storage rotp:temp pot_data{pot_type:"vase"} unless data storage rotp:temp pot_data.dyed run summon item_display ~ ~ ~ {item:{id:"barrier",components:{item_model:"rotp:pottery/pot_type_vase"}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},Tags:["pot_display","pot_base","needs_id"]}
+execute if data storage rotp:temp pot_data{pot_type:"vase"} if data storage rotp:temp pot_data.dyed run function rotp:core/block/placed/pot/spawn_dyed_pot_vase
 execute if data storage rotp:temp pot_data{pot_type:"thin"} run function rotp:core/block/placed/pot/spawn_panels_thin
 execute if data storage rotp:temp pot_data{pot_type:"slab"} run function rotp:core/block/placed/pot/spawn_panels_slab
 execute if data storage rotp:temp pot_data{pot_type:"small"} run function rotp:core/block/placed/pot/spawn_panels_small
 execute if data storage rotp:temp pot_data{pot_type:"square"} run function rotp:core/block/placed/pot/spawn_panels_square
-
+execute if data storage rotp:temp pot_data{pot_type:"large"} run function rotp:core/block/placed/pot/spawn_panels_large
+execute if data storage rotp:temp pot_data{pot_type:"vase"} run function rotp:core/block/placed/pot/spawn_panels_vase
 summon interaction ~ ~-0.5 ~ {width:1.05f,height:0.95f,Tags:["pot_interaction","needs_id"],data:{stored_item:{}}}
 
 execute as @e[tag=needs_id,distance=..1] run scoreboard players operation @s pot_id = #next_pot_id temp
