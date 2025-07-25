@@ -11,6 +11,8 @@ execute if score #can_consume temp matches 1 run item replace block ~ ~ ~ contai
 execute if score #can_consume temp matches 1 run item replace block ~ ~ ~ container.5 with air
 execute if score #can_consume temp matches 1 run item replace block ~ ~ ~ container.6 with air
 execute if score #can_consume temp matches 1 run item replace block ~ ~ ~ container.7 with air
+execute if score #can_consume temp matches 1 run item replace block ~ ~ ~ container.13 with air
+execute if score #can_consume temp matches 1 run item replace block ~ ~ ~ container.14 with air
 
 execute if score #can_consume temp matches 1 if items block ~ ~ ~ container.1 #rotp:pottery_materials run item modify block ~ ~ ~ container.1 {function:set_count,count:-1,add:true}
 execute if score #can_consume temp matches 1 if items block ~ ~ ~ container.19 #rotp:pottery_materials run item modify block ~ ~ ~ container.19 {function:set_count,count:-1,add:true}
