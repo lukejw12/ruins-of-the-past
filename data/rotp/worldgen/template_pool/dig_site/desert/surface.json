@@ -30,6 +30,33 @@
       }
     },
     {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:dig_site/desert/surface_connector_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:dig_site/desert/surface_connector_4",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:dig_site/desert/surface_connector_5",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
+    },
+    {
       "weight": 70,
       "element": {
         "element_type": "minecraft:empty_pool_element"

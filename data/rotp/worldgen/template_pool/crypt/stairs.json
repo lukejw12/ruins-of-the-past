@@ -1,0 +1,15 @@
+{
+  "name": "rotp:crypt/stairs",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/stairs",
+        "processors": "rotp:crypt_base",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

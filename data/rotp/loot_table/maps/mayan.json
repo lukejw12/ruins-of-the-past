@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "destination": "rotp:mayan_temple",
+              "decoration": "minecraft:target_x",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100,
+              "skip_existing_chunks": false,
+              "zoom": 2
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Mayan Temple Explorers Map",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              "target": "item_name"
+            }
+          ],
+          "name": "minecraft:map"
+        }
+      ]
+    }
+  ]
+}

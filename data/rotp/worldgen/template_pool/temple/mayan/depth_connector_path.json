@@ -3,7 +3,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 40,
+      "weight": 50,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rotp:temple/mayan/depth_connector_path_0",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "weight": 40,
+      "weight": 20,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rotp:temple/mayan/depth_connector_path_1",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "weight": 40,
+      "weight": 20,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rotp:temple/mayan/depth_connector_path_2",
@@ -43,6 +43,24 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "rotp:temple/mayan/depth_connector_path_3",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 80,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_path_5",
+        "processors": "rotp:mayan_depth_connector_complete",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 80,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:temple/mayan/depth_connector_path_6",
         "processors": "rotp:mayan_depth_connector_complete",
         "projection": "rigid"
       }

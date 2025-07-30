@@ -1,0 +1,177 @@
+{
+  "name": "rotp:crypt/center/section",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 60,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_1",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_2",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 60,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_3",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_4",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 15,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_5",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_6",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_7",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 25,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_8",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_9",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_10",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_11",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_12",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_13",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_14",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_15",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_16",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_17",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_18",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "rotp:crypt/center/section_19",
+        "processors": "rotp:crypt_center",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

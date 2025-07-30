@@ -1,4 +1,7 @@
 {
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
     "condition": 
     "entity_properties",
     "entity": "this",
@@ -13,5 +16,54 @@
             }
         }
     }
-
+},
+{
+    "condition": 
+    "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.*": {
+                "components": {
+                    "custom_data": {
+                        "runic_altar_placable": true
+                    }
+                }
+            }
+        }
+    }
+},
+{
+    "condition": 
+    "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.*": {
+                "components": {
+                    "custom_data": {
+                        "pottery_wheel_placable": true
+                    }
+                }
+            }
+        }
+    }
+},
+{
+    "condition": 
+    "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.*": {
+                "components": {
+                    "custom_data": {
+                        "pedestal_placable": true
+                    }
+                }
+            }
+        }
+    }
+}
+]
 }

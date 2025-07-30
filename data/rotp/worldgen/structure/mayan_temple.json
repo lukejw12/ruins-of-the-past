@@ -5,7 +5,7 @@
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_pool": "rotp:temple/mayan/base",
-  "size": 10,
+  "size": 15,
   "start_height": {
     "absolute": 1
   },

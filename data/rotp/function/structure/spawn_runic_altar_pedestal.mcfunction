@@ -1,3 +1,4 @@
+kill @s
 setblock ~ ~ ~ air
 
 execute store result score #next_pedestal_id temp run random value 1..9999999

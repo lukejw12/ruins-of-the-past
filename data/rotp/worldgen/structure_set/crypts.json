@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "rotp:crypt",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 29,
+    "separation": 7,
+    "salt": 1234567890
+  }
+}
