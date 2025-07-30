@@ -8,9 +8,7 @@
         "slots": {
           "container.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "tablet_uses": 3
-              }
+              "minecraft:custom_data": "{tablet_uses:3}"
             }
           }
         }
@@ -23,9 +21,7 @@
         "slots": {
           "container.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 3
-              }
+              "minecraft:custom_data": "{discovery_level:3}"
             }
           }
         }
@@ -38,9 +34,7 @@
         "slots": {
           "container.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 2
-              }
+              "minecraft:custom_data": "{discovery_level:2}"
             }
           }
         }
@@ -53,9 +47,7 @@
         "slots": {
           "container.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 1
-              }
+              "minecraft:custom_data": "{discovery_level:1}"
             }
           }
         }
@@ -128,9 +120,7 @@
         "slots": {
           "weapon.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "tablet_uses": 3
-              }
+              "minecraft:custom_data": "{tablet_uses:3}"
             }
           }
         }
@@ -143,9 +133,7 @@
         "slots": {
           "weapon.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 3
-              }
+              "minecraft:custom_data": "{discovery_level:3}"
             }
           }
         }
@@ -158,9 +146,7 @@
         "slots": {
           "weapon.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 2
-              }
+              "minecraft:custom_data": "{discovery_level:2}"
             }
           }
         }
@@ -173,9 +159,7 @@
         "slots": {
           "weapon.*": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 1
-              }
+              "minecraft:custom_data": "{discovery_level:1}"
             }
           }
         }
@@ -248,9 +232,7 @@
         "slots": {
           "player.cursor": {
             "predicates": {
-              "minecraft:custom_data": {
-                "tablet_uses": 3
-              }
+              "minecraft:custom_data": "{tablet_uses:3}"
             }
           }
         }
@@ -263,9 +245,7 @@
         "slots": {
           "player.cursor": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 3
-              }
+              "minecraft:custom_data": "{discovery_level:3}"
             }
           }
         }
@@ -278,9 +258,7 @@
         "slots": {
           "player.cursor": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 2
-              }
+              "minecraft:custom_data": "{discovery_level:2}"
             }
           }
         }
@@ -293,9 +271,7 @@
         "slots": {
           "player.cursor": {
             "predicates": {
-              "minecraft:custom_data": {
-                "discovery_level": 1
-              }
+              "minecraft:custom_data": "{discovery_level:1}"
             }
           }
         }

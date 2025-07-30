@@ -7,7 +7,6 @@ function rotp:sub/item_clear/clear_hotbar {slot:5}
 function rotp:sub/item_clear/clear_hotbar {slot:6}
 function rotp:sub/item_clear/clear_hotbar {slot:7}
 function rotp:sub/item_clear/clear_hotbar {slot:8}
-
 function rotp:sub/item_clear/clear_slot {slot:0}
 function rotp:sub/item_clear/clear_slot {slot:1}
 function rotp:sub/item_clear/clear_slot {slot:2}

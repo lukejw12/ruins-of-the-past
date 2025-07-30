@@ -1,0 +1,13 @@
+{
+  "condition": "entity_properties", 
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.*": {
+        "predicates": {
+          "minecraft:custom_data": "{discovery_level:1}"
+          }
+        }
+      }
+    }
+  }
