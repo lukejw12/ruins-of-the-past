@@ -1,0 +1,6 @@
+tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Maps & Exploration --"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Crypt Explorer Map "},"[",{"click_event":{"action":"run_command","command":"/give @s map[custom_data={explorer_map:true}] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Dig Site Explorer Map "},"[",{"click_event":{"action":"run_command","command":"/give @s map[custom_data={explorer_map:true}] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Mayan Temple Explorer Map "},"[",{"click_event":{"action":"run_command","command":"/give @s map[custom_data={explorer_map:true}] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-------------------------"}]
+tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function rotp:.admin/admin_menu"}}]

@@ -1,0 +1,5 @@
+tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- ROTP Admin Menu --"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Blocks "},"[",{"click_event":{"action":"run_command","command":"/function rotp:.admin/blocks/main"},"color":"aqua","text":"Expand"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Items "},"[",{"click_event":{"action":"run_command","command":"/function rotp:.admin/items/main"},"color":"aqua","text":"Expand"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Pottery & Sherds "},"[",{"click_event":{"action":"run_command","command":"/function rotp:.admin/pottery/main"},"color":"aqua","text":"Expand"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-------------------------"}]
