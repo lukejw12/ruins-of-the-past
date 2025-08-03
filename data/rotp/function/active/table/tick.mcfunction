@@ -1,4 +1,6 @@
 kill @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{gui_filler:1b}}}}]
+kill @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{word_puzzle:1b}}}}]
+kill @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{puzzle_piece:1b}}}}]
 execute unless block ~ ~ ~ barrel run function rotp:active/table/cleanup_table
 execute unless block ~ ~ ~ barrel[open=true] run return 0
 

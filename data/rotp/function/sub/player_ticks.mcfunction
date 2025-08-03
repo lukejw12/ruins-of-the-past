@@ -1,5 +1,6 @@
 execute if predicate rotp:runes run function rotp:rune_effects/check_player_runes
 function rotp:core/block/placed/pedestal/tick
+
 execute as @e[type=interaction,distance=..10] at @s run function rotp:sub/interaction_tick
 execute as @e[type=marker,distance=..20] at @s run function rotp:sub/entity_ticks
 execute if predicate rotp:held_item/table run scoreboard players set @s item_being_held 1

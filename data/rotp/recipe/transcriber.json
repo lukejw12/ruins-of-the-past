@@ -39,7 +39,8 @@
       "consumable": {
         "consume_seconds": 99999,
         "sound": "block.enchantment_table.use"
-      }
+      },
+      "minecraft:max_stack_size": 1
     },
     "count": 1
   }

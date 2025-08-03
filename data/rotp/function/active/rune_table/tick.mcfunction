@@ -7,7 +7,6 @@ execute if block ~ ~ ~ barrel[open=false] run function rotp:active/rune_table/cl
 execute if block ~ ~ ~ barrel[open=false] run function rotp:active/rune_table/clear_gui_slots
 data merge block ~ ~ ~ {CustomName:"Runic Altar"}
 scoreboard players add @s tick_counter 1
-execute if score @s tick_counter matches 2.. run scoreboard players set @s tick_counter 0
 
 execute unless block ~ ~ ~ barrel[open=true] run return 0
 
@@ -15,3 +14,4 @@ execute if block ~ ~ ~ barrel[open=true] if score @s tick_counter matches 2 run 
 execute if block ~ ~ ~ barrel[open=true] if score @s tick_counter matches 2 run function rotp:active/rune_table/fill_gui_slots
 execute if block ~ ~ ~ barrel[open=true] if score @s tick_counter matches 2 run function rotp:active/rune_table/check_recipe
 
+execute if score @s tick_counter matches 2.. run scoreboard players set @s tick_counter 0
