@@ -17,3 +17,7 @@ execute if score #found_target temp matches 1 run return 0
 $execute if block ~$(x) ~$(y) ~$(z) stonecutter run scoreboard players set #found_target temp 1
 $execute if score #found_target temp matches 1 run positioned ~$(x) ~$(y) ~$(z) align xyz positioned ~0.5 ~0.5 ~0.5 run function rotp:core/block/placed/pedestal/spawn_pedestal_display
 execute if score #found_target temp matches 1 run return 0
+
+$execute if block ~$(x) ~$(y) ~$(z) end_portal_frame run scoreboard players set #found_target temp 1
+$execute if score #found_target temp matches 1 run positioned ~$(x) ~$(y) ~$(z) align xyz positioned ~0.5 ~0.5 ~0.5 run function rotp:core/block/placed/runestone/spawn_display
+execute if score #found_target temp matches 1 run return 0

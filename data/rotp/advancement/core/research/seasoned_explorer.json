@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "golden_boots"
+      }
+    },
+    "title": "Seasoned Explorer",
+    "description": "Find ALL structures using an explorers map!",
+    "frame": "challenge"
+  },
+  "parent": "rotp:core/research/structure_seeker",
+  "criteria": {
+    "has_crypt": {
+      "trigger": "minecraft:location",
+        "conditions": {
+            "player": {
+                "location": {
+                    "structures": [
+                        "rotp:crypt"
+
+                    ]
+                }
+            }
+        }
+    },
+    "has_temple": {
+        "trigger": "minecraft:location",
+        "conditions": {
+            "player": {
+                "location": {
+                    "structures": [
+                        "rotp:mayan_temple"
+
+                    ]
+                }
+            }
+        }
+    },
+    "has_dig_site": {
+        "trigger": "minecraft:location",
+        "conditions": {
+            "player": {
+                "location": {
+                    "structures": [
+                        "rotp:desert_dig_site"
+
+                    ]
+                }
+            }
+        }
+    }
+  },
+  "requirements": [
+    [
+        "has_crypt"
+    ],
+    [
+        "has_dig_site"
+    ],
+    [
+        "has_temple"
+    ]
+  ]
+}

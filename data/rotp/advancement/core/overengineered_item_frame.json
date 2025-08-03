@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:blocks/handheld/pedestal"
+      }
+    },
+    "title": "Overengineered Item Frame",
+    "description": "Obtain a pedestal",
+    "frame": "goal"
+  },
+  "parent": "rotp:core/core",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "pedestal_placable": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

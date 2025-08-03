@@ -4,13 +4,11 @@ execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"
 
 execute unless data storage rotp:discovery rarity if data storage rotp:discovery base_rarity run data modify storage rotp:discovery rarity set from storage rotp:discovery base_rarity
 
-execute store result score #dig_site_type temp run random value 1..3
+execute store result score #dig_site_type temp run random value 1..9
 
-execute if score #dig_site_type temp matches 1 run loot give @p loot rotp:maps/dig_site
-execute if score #dig_site_type temp matches 2 run loot give @p loot rotp:maps/crypt
-execute if score #dig_site_type temp matches 3 run loot give @p loot rotp:maps/mayan
-
-tellraw @p[distance=..10] [{"text":"Discovery Complete! Type: "},{"storage":"rotp:discovery","nbt":"type"},{"text":", Subtype: "},{"storage":"rotp:discovery","nbt":"subtype"},{"text":", Rarity: "},{"storage":"rotp:discovery","nbt":"rarity"}]
+execute if score #dig_site_type temp matches 1..3 run loot give @p loot rotp:maps/dig_site
+execute if score #dig_site_type temp matches 4..6 run loot give @p loot rotp:maps/crypt
+execute if score #dig_site_type temp matches 7..9 run loot give @p loot rotp:maps/mayan
 
 data remove storage rotp:discovery type
 data remove storage rotp:discovery subtype

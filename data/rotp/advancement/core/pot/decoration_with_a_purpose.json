@@ -1,0 +1,67 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:pottery/full/pot_type_slab_full"
+      }
+    },
+    "title": "Decoration with a Purpose!",
+    "description": "Craft either a storage, linked, or trapped pot in the pottery wheel!",
+    "frame": "goal"
+  },
+  "parent": "rotp:core/new_skillsets",
+  "criteria": {
+    "storage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "storage_pot": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "linked": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "linked_storage": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "trapped": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "trapped_pot": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+
+  "requirements": [
+    [
+        "linked",
+        "trapped",
+        "storage"
+    ]
+  ]
+}
+  

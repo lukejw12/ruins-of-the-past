@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "minecraft:brush"
+      }
+    },
+    "title": "Archaeology",
+    "description": "Craft your very first brush!",
+    "background": "minecraft:block/suspicious_sand_0",
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:brush"
+          }
+        ]
+      }
+    }
+  }
+}

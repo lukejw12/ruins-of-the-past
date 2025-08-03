@@ -1,4 +1,7 @@
 scoreboard players set #found_target temp 0
+execute if block ~ ~ ~ end_portal_frame run function rotp:core/block/placed/runestone/spawn_display
+execute if block ~ ~ ~ end_portal_frame run scoreboard players set #found_target temp 1
+execute if score #found_target temp matches 1 run return 0 
 
 execute if block ~ ~ ~ stonecutter run function rotp:core/block/placed/pedestal/spawn_pedestal_display
 execute if block ~ ~ ~ stonecutter run scoreboard players set #found_target temp 1

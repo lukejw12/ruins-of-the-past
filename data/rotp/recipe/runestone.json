@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:smooth_stone",
+    "B": "minecraft:enchanted_book"
+  },
+  "result": {
+    "id": "minecraft:end_portal_frame",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Runestone",
+        "color": "white"
+      },
+      "minecraft:item_model": "rotp:blocks/handheld/rune_stone",
+      "minecraft:custom_data": {
+        "runestone": true
+      }
+    },
+    "count": 1
+  }
+}

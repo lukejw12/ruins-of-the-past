@@ -1,4 +1,1 @@
 execute if data storage rotp:discovery {type:"rune"} run function rotp:active/table/discovery/give_rune_reward
-execute if data storage rotp:discovery {type:"dig_site"} run execute at @p[distance=..10] run summon item ~ ~ ~ {Item:{id:"minecraft:structure_block",count:1,components:{item_name:{text:"Dig Site Map",color:"white"},lore:[{text:""},{text:"Location:",color:"gray",italic:false},{text:"Unknown",color:"blue",italic:false}],custom_data:{dig_site_map:true}}},PickupDelay:0,Motion:[0.0,0.1,0.0]}
-
-tellraw @p[distance=..10] [{"text":"Discovery Complete! Type: "},{"storage":"rotp:discovery","nbt":"type"},{"text":", Subtype: "},{"storage":"rotp:discovery","nbt":"subtype"},{"text":", Rarity: "},{"storage":"rotp:discovery","nbt":"rarity"}]

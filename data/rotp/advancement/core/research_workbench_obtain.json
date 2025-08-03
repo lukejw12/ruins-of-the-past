@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:blocks/handheld/research_workbench"
+      }
+    },
+    "title": "Knowledge is Power!",
+    "description": "Obtain a research workbench!",
+    "frame": "goal"
+  },
+  "parent": "rotp:core/ancient_artifact",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "research_workbench_placable": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

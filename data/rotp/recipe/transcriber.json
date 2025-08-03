@@ -12,7 +12,7 @@
     "E": "minecraft:experience_bottle"
   },
   "result": {
-    "id": "minecraft:stone",
+    "id": "minecraft:command_block",
     "components": {
       "minecraft:item_name": {
         "text": "Transcriber",
@@ -35,6 +35,10 @@
         "transcriber": true,
         "stored_levels": 0,
         "max_levels": 150
+      },
+      "consumable": {
+        "consume_seconds": 99999,
+        "sound": "block.enchantment_table.use"
       }
     },
     "count": 1

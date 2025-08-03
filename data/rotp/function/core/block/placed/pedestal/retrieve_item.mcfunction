@@ -2,8 +2,8 @@ execute unless data entity @s data.stored_item.id run return 0
 tag @s add being_retreived
 execute if data entity @s data.stored_item.components."minecraft:custom_data".pedestal_placable run function rotp:core/block/placed/pedestal/cleanup_nested_pedestal
 
-execute at @p[distance=..10] run summon item ~ ~ ~ {Item:{id:"stone",count:1},PickupDelay:0,Motion:[0.0,0.1,0.0],Tags:[new_item]}
-execute at @p[distance=..10] as @e[type=item,distance=..1,limit=1,sort=nearest,tag=new_item] run data modify entity @s Item set from entity @e[tag=pedestal_interaction,limit=1,sort=nearest,tag=being_retreived] data.stored_item
+execute at @a[tag=pedestal_interact,limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"stone",count:1},PickupDelay:0,Motion:[0.0,0.1,0.0],Tags:[new_item]}
+execute at @a[tag=pedestal_interact,limit=1,sort=nearest] as @e[type=item,distance=..1,limit=1,sort=nearest,tag=new_item] run data modify entity @s Item set from entity @e[tag=pedestal_interaction,limit=1,sort=nearest,tag=being_retreived] data.stored_item
 
 data modify entity @s data.stored_item set value {}
 

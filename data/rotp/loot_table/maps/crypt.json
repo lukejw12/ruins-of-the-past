@@ -26,6 +26,14 @@
                 "obfuscated": false
               },
               "target": "item_name"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "explorer_map": true
+                }
+              }
             }
           ],
           "name": "minecraft:map"

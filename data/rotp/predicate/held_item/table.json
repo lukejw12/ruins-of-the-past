@@ -56,9 +56,25 @@
     "predicate": {
         "slots": {
             "weapon.*": {
-                "components": {
+                "predicates": {
                     "custom_data": {
                         "pedestal_placable": true
+                    }
+                }
+            }
+        }
+    }
+},
+{
+    "condition": 
+    "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.*": {
+                "components": {
+                    "custom_data": {
+                        "runestone": true
                     }
                 }
             }

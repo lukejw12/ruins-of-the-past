@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "CCC",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:end_portal_frame",
+    "B": "#anvil",
+    "C": "red_carpet"
+  },
+  "result": {
+    "id": "minecraft:furnace",
+    "components": {
+      "minecraft:custom_data": "{runic_altar_placable:1b}",
+      "minecraft:item_model": "rotp:blocks/handheld/runic_alter",
+      "minecraft:item_name": {
+        "bold": false,
+        "italic": false,
+        "obfuscated": false,
+        "strikethrough": false,
+        "text": "Runic Altar",
+        "underlined": false
+      },
+      "minecraft:rarity": "rare"
+    }
+  }
+}

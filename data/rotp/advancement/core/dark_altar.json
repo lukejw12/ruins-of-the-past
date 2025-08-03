@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:blocks/handheld/runic_alter"
+      }
+    },
+    "title": "Eerie Altar",
+    "description": "Obtain a runic altar from crafting or exploration",
+    "frame": "challenge"
+  },
+  "parent": "rotp:core/runes/runestone",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "runic_altar_placable": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

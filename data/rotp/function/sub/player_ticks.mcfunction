@@ -8,4 +8,4 @@ execute if predicate rotp:gui_invalid run function rotp:sub/item_clear/check_slo
 execute unless predicate rotp:held_item/table unless predicate rotp:held_item/pot run scoreboard players set @s item_being_held 0
 scoreboard players enable @s dynamic_lighting
 function rotp:sub/dynamic_lighting_tick
-execute as @e[type=item_display,distance=..50] at @s unless block ~ ~ ~ barrel run function rotp:sub/display_ticks
+execute as @e[type=item_display,distance=..40,tag=!needs_id] at @s unless block ~ ~ ~ barrel run function rotp:sub/display_ticks

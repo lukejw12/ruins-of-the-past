@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "minecraft:filled_map"
+      }
+    },
+    "title": "Journey to Greatness!",
+    "description": "Obtain a Explorers map from researching an ancient tablet!",
+    "frame": "goal"
+  },
+  "parent": "rotp:core/research_workbench_obtain",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "explorer_map": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

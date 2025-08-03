@@ -1,4 +1,4 @@
-
+execute as @s[tag=runestone_display] run function rotp:core/block/placed/runestone/tick
 execute as @s[tag=research_workbench_display] unless block ~ ~ ~ barrel run kill @s
 execute as @s[tag=runic_altar_display] unless block ~ ~ ~ barrel run kill @s
 execute as @s[tag=pottery_wheel_display] unless block ~ ~ ~ barrel run kill @s

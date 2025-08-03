@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:pottery/tint/full/pot_type_thin_full",
+        "dyed_color": 16711680
+      }
+    },
+    "title": "Tinting with Style",
+    "description": "Tint a pot or pedestal with a dye",
+    "frame": "goal"
+  },
+  "parent": "rotp:core/pot/vibrant_visuals",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

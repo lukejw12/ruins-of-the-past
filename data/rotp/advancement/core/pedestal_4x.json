@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:blocks/handheld/pedestal"
+      }
+    },
+    "title": "Pedestal on a Pedestal on a Pedestal on a Pedestal",
+    "description": "Stack 4 pedestals!",
+    "frame": "challenge"
+  },
+  "parent": "rotp:core/overengineered_item_frame",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -17,7 +17,20 @@ execute as @e[tag=nested_pedestal_interaction] if score @s pedestal_id = #curren
 execute as @e[tag=pedestal_item_display] if score @s pedestal_id = #current_pedestal_id temp run kill @s
 execute as @e[tag=pedestal_display] if score @s pedestal_id = #current_pedestal_id temp run kill @s
 execute as @e[tag=pedestal_marker] if score @s pedestal_id = #current_pedestal_id temp run kill @s
-summon item ~ ~0.2 ~ {Motion:[0.0,0.1,0.0],Item:{id:"minecraft:stonecutter",count:1,components:{"minecraft:custom_data":{pedestal_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/pedestal","minecraft:item_name":{"color":"white","text":"Pedestal"}}}}
+
+execute if data entity @s data.pedestal_item.components."minecraft:custom_data".dyed run data modify storage rotp:temp pedestal_dye_data set from entity @s data.pedestal_item.components."minecraft:dyed_color"
+execute if data entity @s data.pedestal_item.components."minecraft:custom_data".dyed run data modify storage rotp:temp pedestal_is_dyed set value 1b
+execute unless data entity @s data.pedestal_item.components."minecraft:custom_data".dyed run data modify storage rotp:temp pedestal_is_dyed set value 0b
+
+summon item ~ ~0.2 ~ {Motion:[0.0,0.1,0.0],Item:{id:"minecraft:stonecutter",count:1,components:{"minecraft:custom_data":{pedestal_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/pedestal","minecraft:item_name":{"color":"white","text":"Pedestal"}}},Tags:["new_pedestal_item"]}
+
+execute if data storage rotp:temp {pedestal_is_dyed:1b} as @e[type=item,distance=..2,limit=1,sort=nearest,tag=new_pedestal_item] run data modify entity @s Item.components."minecraft:item_model" set value "rotp:blocks/handheld/tint/pedestal"
+execute if data storage rotp:temp {pedestal_is_dyed:1b} as @e[type=item,distance=..2,limit=1,sort=nearest,tag=new_pedestal_item] run data modify entity @s Item.components."minecraft:dyed_color" set from storage rotp:temp pedestal_dye_data
+execute if data storage rotp:temp {pedestal_is_dyed:1b} as @e[type=item,distance=..2,limit=1,sort=nearest,tag=new_pedestal_item] run data modify entity @s Item.components."minecraft:custom_data".dyed set value 1b
+execute if data storage rotp:temp {pedestal_is_dyed:1b} as @e[type=item,distance=..2,limit=1,sort=nearest,tag=new_pedestal_item] run data modify entity @s Item.components."minecraft:custom_data".pedestal_placable set value 1b
+
+execute as @e[type=item,distance=..2,limit=1,sort=nearest,tag=new_pedestal_item] run tag @s remove new_pedestal_item
+
 item modify entity @e[type=item,distance=..2,limit=1,sort=nearest,nbt={Item:{id:"minecraft:barrel"}}] contents {function:"set_count",count:-1,add:true}
 kill @s
 

@@ -1,0 +1,3 @@
+execute unless block ~ ~ ~ smooth_stone run kill @s
+execute unless block ~ ~ ~ smooth_stone run item modify entity @e[type=item,distance=..2,limit=1,sort=nearest,nbt={Item:{id:"minecraft:smooth_stone"}}] contents {function:"set_count",count:-1,add:true}
+execute unless block ~ ~ ~ smooth_stone run summon item ~ ~ ~ {Motion:[0.0,0.1,0.0],Item:{id:"minecraft:end_portal_frame",count:1,components:{"minecraft:custom_data":{runestone:1b},"minecraft:item_model":"rotp:blocks/handheld/rune_stone","minecraft:item_name":{"color":"white","text":"Runestone"}}}}

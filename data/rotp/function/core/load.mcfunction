@@ -55,3 +55,5 @@ scoreboard objectives add previous_light dummy
 scoreboard objectives add light_update_timer dummy
 scoreboard objectives add previous_sky dummy
 gamerule commandBlockOutput false
+
+scoreboard objectives add runestone_id dummy

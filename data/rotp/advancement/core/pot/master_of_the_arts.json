@@ -1,0 +1,474 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:pottery/tint/full/pot_type_large_full",
+        "dyed_color": 13938487
+      }
+    },
+    "title": "Master of the Arts",
+    "description": "Dye pots using EVERY dye color, and craft all 6 unique pots",
+    "frame": "challenge"
+  },
+  "parent": "rotp:core/pot/shine_like_a_diamond",
+  "criteria": {
+    "red": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"9255469\"]}"
+        }
+      }
+    },
+    "orange": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"10311971\"]}"
+        }
+      }
+    },
+    "yellow": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"12092449\"]}"
+        }
+      }
+    },
+    "green": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"6644540\"]}"
+        }
+      }
+    },
+    "blue": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"6183280\"]}"
+        }
+      }
+    },
+    "purple": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"8079961\"]}"
+        }
+      }
+    },
+    "magenta": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"9721452\"]}"
+        }
+      }
+    },
+    "pink": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"10899793\"]}"
+        }
+      }
+    },
+    "lime": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"7568693\"]}"
+        }
+      }
+    },
+    "light_blue": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"7761804\"]}"
+        }
+      }
+    },
+    "light_gray": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"8874850\"]}"
+        }
+      }
+    },
+    "black": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"3350550\"]}"
+        }
+      }
+    },
+    "white": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"14665917\"]}"
+        }
+      }
+    },
+    "gray": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"4863790\"]}"
+        }
+      }
+    },
+    "cyan": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"6776156\"]}"
+        }
+      }
+    },
+    "brown": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"8406836\"]}"
+        }
+      }
+    },
+    "red2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"16711680\"]}"
+        }
+      }
+    },
+    "orange2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"16744448\"]}"
+        }
+      }
+    },
+    "yellow2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"16776960\"]}"
+        }
+      }
+    },
+    "green2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"32768\"]}"
+        }
+      }
+    },
+    "blue2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"26316\"]}"
+        }
+      }
+    },
+    "purple2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"10494192\"]}"
+        }
+      }
+    },
+    "magenta2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"16711935\"]}"
+        }
+      }
+    },
+    "pink2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"16761035\"]}"
+        }
+      }
+    },
+    "lime2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"8388352\"]}"
+        }
+      }
+    },
+    "light_blue2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"52479\"]}"
+        }
+      }
+    },
+    "light_gray2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"12632256\"]}"
+        }
+      }
+    },
+    "black2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"4210752\"]}"
+        }
+      }
+    },
+    "white2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"16777215\"]}"
+        }
+      }
+    },
+    "gray2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"8421504\"]}"
+        }
+      }
+    },
+    "cyan2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"35723\"]}"
+        }
+      }
+    },
+    "brown2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"9127187\"]}"
+        }
+      }
+    },
+    "thin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "pot_type": "thin"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "pot_type": "slab"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "square": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "pot_type": "square"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "small": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "pot_type": "small"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "large": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "pot_type": "large"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "pot_type": "vase"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+  ,
+  "requirements": [
+    [
+        "black"
+    ],
+        [
+        "blue"
+        ],
+        [
+        "cyan"
+        ],
+        [
+        "gray"
+        ],
+        [
+        "green"
+        ],
+        [
+        "light_blue"
+        ],
+        [
+        "light_gray"
+        ],
+        [
+        "lime"
+        ],
+        [
+        "magenta"
+        ],
+        [
+        "orange"
+        ],
+        [
+        "pink"
+        ],
+        [
+        "purple"
+        ],
+        [
+        "brown"
+        ],
+        [
+        "red"
+        ],
+        [
+        "white"
+        ],
+        [
+        "yellow"
+    ],
+    [
+        "black2"
+    ],
+        [
+        "blue2"
+        ],
+        [
+        "cyan2"
+        ],
+        [
+        "gray2"
+        ],
+        [
+        "green2"
+        ],
+        [
+        "light_blue2"
+        ],
+        [
+        "light_gray2"
+        ],
+        [
+        "lime2"
+        ],
+        [
+        "magenta2"
+        ],
+        [
+        "orange2"
+        ],
+        [
+        "pink2"
+        ],
+        [
+        "purple2"
+        ],
+        [
+        "brown2"
+        ],
+        [
+        "red2"
+        ],
+        [
+        "white2"
+        ],
+        [
+        "yellow2"
+    ],
+    [
+        "thin"
+    ],
+    [
+        "large"
+    ],
+    [
+        "vase"
+    ],
+    [
+        "small"
+    ],
+    [
+        "square"
+    ],
+    [
+        "slab"
+    ]
+  ]
+}
