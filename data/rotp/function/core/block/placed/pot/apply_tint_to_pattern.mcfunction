@@ -23,4 +23,12 @@ execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/
 execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_snort"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_snort"
 execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_brick"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_brick"
 
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_creeper"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_creeper"
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_chicken"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_chicken"
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_pot"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_pot"
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_bot"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_bot"
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_tnt"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_tnt"
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_ingot"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_ingot"
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/patterns/pattern_lock"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/tint/patterns/pattern_lock"
+
 data modify entity @s item.components."minecraft:dyed_color" set from storage rotp:temp current_dye_color
