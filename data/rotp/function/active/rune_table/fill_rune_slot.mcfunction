@@ -1,0 +1,3 @@
+$execute unless items block ~ ~ ~ container.$(slot) *[custom_data={gui_filler:1b}] if items block ~ ~ ~ container.$(slot) * unless items block ~ ~ ~ container.$(slot) *[custom_data~{rune_result:1b}] run function rotp:active/rune_table/return_item {slot:$(slot)}
+execute unless items block ~ ~ ~ container.11 * run item replace block ~ ~ ~ container.10 with stone[item_model="rotp:gui_elements/rune_slot",tooltip_display={hide_tooltip:true},custom_data={gui_filler:1b}]
+execute if items block ~ ~ ~ container.11 * run item replace block ~ ~ ~ container.10 with stone[item_model="rotp:gui_elements/filled_slot",tooltip_display={hide_tooltip:true},custom_data={gui_filler:1b}]
