@@ -11,6 +11,16 @@
         },
         {
           "type": "minecraft:item",
+          "name": "diamond",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "emerald",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:iron_nugget",
           "weight": 20,
           "functions": [
@@ -50,6 +60,144 @@
             {
               "function": "minecraft:set_count",
               "count": 0
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:repeating_command_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "creeper_pottery_sherd": true
+                },
+                "minecraft:item_model": "rotp:items/sherds/creeper_pottery_sherd"
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "white",
+                  "text": "Creeper Pottery Sherd"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "Applies to:"
+                },
+                {
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Pottery"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:repeating_command_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "pot_pottery_sherd": true
+                },
+                "minecraft:item_model": "rotp:items/sherds/pot_pottery_sherd"
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "white",
+                  "text": "Pot Pottery Sherd"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "Applies to:"
+                },
+                {
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Pottery"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:repeating_command_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "ingot_pottery_sherd": true
+                },
+                "minecraft:item_model": "rotp:items/sherds/ingot_pottery_sherd"
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "white",
+                  "text": "Ingot Pottery Sherd"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "Applies to:"
+                },
+                {
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Pottery"
+                }
+              ],
+              "mode": "append"
             }
           ]
         }
