@@ -22,7 +22,7 @@ execute if data entity @s data.pedestal_item.components."minecraft:custom_data".
 execute if data entity @s data.pedestal_item.components."minecraft:custom_data".dyed run data modify storage rotp:temp pedestal_is_dyed set value 1b
 execute unless data entity @s data.pedestal_item.components."minecraft:custom_data".dyed run data modify storage rotp:temp pedestal_is_dyed set value 0b
 
-summon item ~ ~0.2 ~ {Motion:[0.0,0.1,0.0],Item:{id:"minecraft:stonecutter",count:1,components:{"minecraft:custom_data":{pedestal_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/pedestal","minecraft:item_name":{"color":"white","text":"Pedestal"}}},Tags:["new_pedestal_item"]}
+summon item ~ ~0.2 ~ {Motion:[0.0,0.1,0.0],Item:{id:"minecraft:blast_furnace",count:1,components:{"minecraft:container":[{slot:0,item:{components:{"minecraft:custom_data":{pedestal:1b}},count:1,id:"minecraft:stone"}}],"minecraft:custom_data":{pedestal_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/pedestal","minecraft:item_name":{"color":"white","text":"Pedestal"},"minecraft:tooltip_display":{hidden_components:["container"]}}}}
 
 execute if data storage rotp:temp {pedestal_is_dyed:1b} as @e[type=item,distance=..2,limit=1,sort=nearest,tag=new_pedestal_item] run data modify entity @s Item.components."minecraft:item_model" set value "rotp:blocks/handheld/tint/pedestal"
 execute if data storage rotp:temp {pedestal_is_dyed:1b} as @e[type=item,distance=..2,limit=1,sort=nearest,tag=new_pedestal_item] run data modify entity @s Item.components."minecraft:dyed_color" set from storage rotp:temp pedestal_dye_data

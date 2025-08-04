@@ -2,7 +2,7 @@ kill @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{g
 execute unless block ~ ~ ~ barrel run execute as @e[type=item_display,tag=pottery_wheel_display,distance=..2] if score @s pottery_wheel_id = @e[type=marker,tag=pottery_wheel,limit=1,sort=nearest] pottery_wheel_id run kill @s
 execute unless block ~ ~ ~ barrel run kill @s
 execute unless block ~ ~ ~ barrel run item modify entity @e[type=item,distance=..2,limit=1,sort=nearest,nbt={Item:{id:"minecraft:barrel"}}] contents {function:"set_count",count:-1,add:true}
-execute unless block ~ ~ ~ barrel run summon item ~ ~0.2 ~ {Motion:[0.0,0.1,0.0],Item:{id:"minecraft:smoker",count:1,components:{"minecraft:custom_data":{pottery_wheel_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/pottery_wheel","minecraft:item_name":{"color":"white","text":"Pottery Wheel"}}}}
+execute unless block ~ ~ ~ barrel run summon item ~ ~0.2 ~ {Motion:[0.0,0.1,0.0],Item:{id:"minecraft:blast_furnace",count:1,components:{"minecraft:container":[{slot:0,item:{components:{"minecraft:custom_data":{pottery_wheel:1b}},count:1,id:"minecraft:stone"}}],"minecraft:custom_data":{pottery_wheel_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/pottery_wheel","minecraft:item_name":{"color":"white","text":"Pottery Wheel"},"minecraft:tooltip_display":{hidden_components:["container"]}}}}
 execute if score @s tick_counter matches 2.. run scoreboard players set @s tick_counter 0
 execute if score @s tick_counter matches 1 if block ~ ~ ~ barrel[open=false] run function rotp:active/pottery_wheel/clear_result_slots
 execute if score @s tick_counter matches 1 if block ~ ~ ~ barrel[open=false] run function rotp:active/pottery_wheel/clear_gui_slots

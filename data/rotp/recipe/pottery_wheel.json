@@ -12,7 +12,7 @@
     "C": "minecraft:stick"
   },
   "result": {
-    "id": "minecraft:smoker",
+    "id": "minecraft:blast_furnace",
     "components": {
       "minecraft:item_name": {
         "text": "Pottery Wheel",
@@ -21,6 +21,24 @@
       "minecraft:item_model": "rotp:blocks/handheld/pottery_wheel",
       "minecraft:custom_data": {
         "pottery_wheel_placable": true
+      },
+      "container": [
+        {
+          "slot": 0,
+          "item": {
+            "id": "stone",
+            "components": {
+              "custom_data": {
+                "pottery_wheel": true
+              }
+            }
+          }
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "container"
+        ]
       }
     },
     "count": 1

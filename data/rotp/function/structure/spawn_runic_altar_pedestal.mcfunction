@@ -8,7 +8,7 @@ summon marker ~ ~ ~ {Tags:["pedestal_marker","needs_id"]}
 summon item_display ~ ~ ~ {item:{id:"barrier",components:{item_model:"rotp:blocks/placed/pedestal"}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{sky:15,block:0},Tags:["pedestal_display","needs_id"]}
 summon interaction ~ ~-0.5 ~ {width:1.02f,height:1.02f,Tags:["pedestal_interaction","needs_id"],data:{stored_item:{}}}
 
-data modify storage rotp:temp runic_altar_item set value {id:"minecraft:furnace",count:1,components:{"minecraft:custom_data":{runic_altar_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/runic_alter","minecraft:item_name":{bold:0b,italic:0b,obfuscated:0b,strikethrough:0b,text:"Runic Altar",underlined:0b},"minecraft:rarity":"rare"}}
+data modify storage rotp:temp runic_altar_item set value {id:"minecraft:blast_furnace",count:1,components:{"minecraft:custom_data":{runic_altar_placable:1b},"minecraft:item_model":"rotp:blocks/handheld/runic_alter","minecraft:item_name":{bold:0b,italic:0b,obfuscated:0b,strikethrough:0b,text:"Runic Altar",underlined:0b},"minecraft:rarity":"rare","minecraft:container":[{slot:0,item:{id:"minecraft:stone",count:1,components:{"minecraft:custom_data":{runic_altar:1b}}}}],"minecraft:tooltip_display":{hidden_components:["container"]}}}
 
 execute as @e[tag=pedestal_interaction,distance=..1,limit=1] run data modify entity @s data.stored_item set from storage rotp:temp runic_altar_item
 

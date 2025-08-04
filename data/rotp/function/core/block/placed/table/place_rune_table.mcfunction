@@ -1,7 +1,7 @@
-execute if block ~ ~ ~ furnace[facing=south] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=south]
-execute if block ~ ~ ~ furnace[facing=north] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=north]
-execute if block ~ ~ ~ furnace[facing=east] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=east]
-execute if block ~ ~ ~ furnace[facing=west] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=west]
+execute if block ~ ~ ~ blast_furnace[facing=south] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=south]
+execute if block ~ ~ ~ blast_furnace[facing=north] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=north]
+execute if block ~ ~ ~ blast_furnace[facing=east] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=east]
+execute if block ~ ~ ~ blast_furnace[facing=west] align xyz positioned ~0.5 ~ ~0.5 run setblock ~ ~ ~ barrel[facing=west]
 
 execute store result score #next_altar_id temp run random value 1000..9999999
 

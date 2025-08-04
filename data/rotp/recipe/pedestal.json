@@ -13,7 +13,7 @@
     "D": "minecraft:polished_tuff"
     },
   "result": {
-    "id": "minecraft:stonecutter",
+    "id": "minecraft:blast_furnace",
     "components": {
       "minecraft:item_name": {
         "text": "Pedestal",
@@ -22,6 +22,24 @@
       "minecraft:item_model": "rotp:blocks/handheld/pedestal",
       "minecraft:custom_data": {
         "pedestal_placable": true
+      },
+      "container": [
+        {
+          "slot": 0,
+          "item": {
+            "id": "stone",
+            "components": {
+              "custom_data": {
+                "pedestal": true
+              }
+            }
+          }
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "container"
+        ]
       }
     },
     "count": 1

@@ -1,9 +1,6 @@
 {
     "values": [
-        "loom",
-        "smoker",
         "furnace",
-        "light",
-        "stonecutter"
+        "light"
     ]
 }

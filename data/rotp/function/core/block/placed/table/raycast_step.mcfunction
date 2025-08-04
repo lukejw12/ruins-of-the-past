@@ -3,20 +3,20 @@ execute if block ~ ~ ~ end_portal_frame run function rotp:core/block/placed/rune
 execute if block ~ ~ ~ end_portal_frame run scoreboard players set #found_target temp 1
 execute if score #found_target temp matches 1 run return 0 
 
-execute if block ~ ~ ~ stonecutter run function rotp:core/block/placed/pedestal/spawn_pedestal_display
-execute if block ~ ~ ~ stonecutter run scoreboard players set #found_target temp 1
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".pedestal run function rotp:core/block/placed/pedestal/spawn_pedestal_display
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".pedestal run scoreboard players set #found_target temp 1
 execute if score #found_target temp matches 1 run return 0
 
-execute if block ~ ~ ~ loom run function rotp:core/block/placed/table/place_table
-execute if block ~ ~ ~ loom run scoreboard players set #found_target temp 1
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".research_workbench run function rotp:core/block/placed/table/place_table
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".research_workbench run scoreboard players set #found_target temp 1
 execute if score #found_target temp matches 1 run return 0
 
-execute if block ~ ~ ~ furnace run function rotp:core/block/placed/table/place_rune_table
-execute if block ~ ~ ~ furnace run scoreboard players set #found_target temp 1
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".runic_altar run function rotp:core/block/placed/table/place_rune_table
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".runic_altar run scoreboard players set #found_target temp 1
 execute if score #found_target temp matches 1 run return 0
 
-execute if block ~ ~ ~ smoker run function rotp:core/block/placed/pottery_wheel/place_pottery_wheel
-execute if block ~ ~ ~ smoker run scoreboard players set #found_target temp 1
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".pottery_wheel run function rotp:core/block/placed/pottery_wheel/place_pottery_wheel
+execute if data block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".pottery_wheel run scoreboard players set #found_target temp 1
 execute if score #found_target temp matches 1 run return 0
 execute if block ~ ~ ~ structure_void if entity @e[type=marker,tag=pedestal_marker,distance=..0.5] run return 0
 execute if block ~ ~ ~ structure_void align xyz positioned ~0.5 ~0.5 ~0.5 run function rotp:core/block/placed/pot/spawn_pot_display

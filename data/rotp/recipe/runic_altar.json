@@ -12,7 +12,7 @@
     "C": "red_carpet"
   },
   "result": {
-    "id": "minecraft:furnace",
+    "id": "minecraft:blast_furnace",
     "components": {
       "minecraft:custom_data": "{runic_altar_placable:1b}",
       "minecraft:item_model": "rotp:blocks/handheld/runic_alter",
@@ -23,6 +23,24 @@
         "strikethrough": false,
         "text": "Runic Altar",
         "underlined": false
+      },
+      "container": [
+        {
+          "slot": 0,
+          "item": {
+            "id": "stone",
+            "components": {
+              "custom_data": {
+                "runic_altar": true
+              }
+            }
+          }
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "container"
+        ]
       },
       "minecraft:rarity": "rare"
     }
