@@ -8,7 +8,8 @@
     },
     "title": "Shine Bright like a Diamond",
     "description": "Craft ALL vibrant dyes",
-    "frame": "challenge"
+    "frame": "challenge",
+    "hidden": true
   },
   "parent": "rotp:core/pot/vibrant_visuals",
   "criteria": {

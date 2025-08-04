@@ -8,7 +8,8 @@
     },
     "title": "Pedestal on a Pedestal on a Pedestal on a Pedestal",
     "description": "Stack 4 pedestals!",
-    "frame": "challenge"
+    "frame": "challenge",
+    "hidden": true
   },
   "parent": "rotp:core/overengineered_item_frame",
   "criteria": {
