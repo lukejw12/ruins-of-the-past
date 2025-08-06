@@ -1,0 +1,7 @@
+
+function rotp:active/pottery_wheel/clear_result_slots_if_needed
+function rotp:active/pottery_wheel/check_wrong_pots_in_results
+function rotp:active/pottery_wheel/check_excess_pots
+function rotp:active/pottery_wheel/check_result_taken
+function rotp:active/pottery_wheel/fill_gui_slots
+function rotp:active/pottery_wheel/check_recipe
