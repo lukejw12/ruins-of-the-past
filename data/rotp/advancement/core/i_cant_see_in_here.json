@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "stone",
+      "components": {
+        "minecraft:item_model": "rotp:pottery/full/carved/pot_type_thin_full"
+      }
+    },
+    "title": "I CANT SEE IN HERE!!!!",
+    "description": "Craft and wear any pot using a carved pottery sherd",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "parent": "rotp:core/new_skillsets",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "predicates": {
+                "custom_data": {
+                  "carved_pot": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

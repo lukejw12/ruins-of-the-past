@@ -27,5 +27,6 @@ $execute if data storage rotp:temp {$(direction)_material_name:"pot"} run data m
 $execute if data storage rotp:temp {$(direction)_material_name:"ingot"} run data modify storage rotp:temp $(direction)_display_name set value "Ingot Pottery Sherd"
 $execute if data storage rotp:temp {$(direction)_material_name:"tnt"} run data modify storage rotp:temp $(direction)_display_name set value "Tnt Pottery Sherd"
 $execute if data storage rotp:temp {$(direction)_material_name:"creeper"} run data modify storage rotp:temp $(direction)_display_name set value "Creeper Pottery Sherd"
+$execute if data storage rotp:temp {$(direction)_material_name:"carved"} run data modify storage rotp:temp $(direction)_display_name set value "Carved Pottery Sherd"
 $execute if data storage rotp:temp {$(direction)_material_name:"chicken"} run data modify storage rotp:temp $(direction)_display_name set value "Chicken Pottery Sherd"
 $execute if data storage rotp:temp {$(direction)_material_name:"lock"} run data modify storage rotp:temp $(direction)_display_name set value "Lock Pottery Sherd"

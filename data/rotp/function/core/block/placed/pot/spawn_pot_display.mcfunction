@@ -35,6 +35,8 @@ execute if data storage rotp:temp pot_data{pot_type:"large"} if data storage rot
 
 execute if data storage rotp:temp pot_data{pot_type:"vase"} unless data storage rotp:temp pot_data.dyed run summon item_display ~ ~ ~ {item:{id:"barrier",components:{item_model:"rotp:pottery/pot_type_vase"}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},Tags:["pot_display","pot_base","needs_id"]}
 execute if data storage rotp:temp pot_data{pot_type:"vase"} if data storage rotp:temp pot_data.dyed run function rotp:core/block/placed/pot/spawn_dyed_pot_vase
+
+
 execute if data storage rotp:temp pot_data{pot_type:"thin"} run function rotp:core/block/placed/pot/spawn_panels_thin
 execute if data storage rotp:temp pot_data{pot_type:"slab"} run function rotp:core/block/placed/pot/spawn_panels_slab
 execute if data storage rotp:temp pot_data{pot_type:"small"} run function rotp:core/block/placed/pot/spawn_panels_small

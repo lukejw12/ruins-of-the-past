@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:chain_command_block",
+  "result": {
+    "id": "minecraft:repeating_command_block",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Carved Pottery Sherd",
+        "color": "white"
+      },
+      "minecraft:lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "Applies to:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Pottery",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "rotp:items/sherds/carved_pottery_sherd",
+      "minecraft:custom_data": {
+        "carved_pottery_sherd": true
+      }
+    }
+  }
+}

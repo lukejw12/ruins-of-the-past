@@ -24,6 +24,7 @@ execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/
 execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/tint/patterns/pattern_brick"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/patterns/pattern_brick"
 
 
+execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/tint/patterns/pattern_carved"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/patterns/pattern_carved"
 execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/tint/patterns/pattern_creeper"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/patterns/pattern_creeper"
 execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/tint/patterns/pattern_chicken"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/patterns/pattern_chicken"
 execute if data entity @s item{components:{"minecraft:item_model":"rotp:pottery/tint/patterns/pattern_pot"}} run data modify entity @s item.components."minecraft:item_model" set value "rotp:pottery/patterns/pattern_pot"

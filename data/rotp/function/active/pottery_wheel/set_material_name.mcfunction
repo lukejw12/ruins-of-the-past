@@ -29,3 +29,4 @@ $execute if score #$(direction)_material temp matches 28 run data modify storage
 $execute if score #$(direction)_material temp matches 29 run data modify storage rotp:temp $(direction)_material_name set value "creeper"
 $execute if score #$(direction)_material temp matches 30 run data modify storage rotp:temp $(direction)_material_name set value "chicken"
 $execute if score #$(direction)_material temp matches 31 run data modify storage rotp:temp $(direction)_material_name set value "lock"
+$execute if score #$(direction)_material temp matches 32 run data modify storage rotp:temp $(direction)_material_name set value "carved"

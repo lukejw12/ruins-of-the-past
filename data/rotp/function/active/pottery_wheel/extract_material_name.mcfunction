@@ -29,3 +29,4 @@ $execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_d
 $execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{creeper_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 29
 $execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{chicken_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 30
 $execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{lock_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 31
+$execute if items block ~ ~ ~ container.$(slot) repeating_command_block[custom_data~{carved_pottery_sherd:true}] run scoreboard players set #$(direction)_material temp 32
