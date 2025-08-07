@@ -1,3 +1,4 @@
+
 function rotp:active/table/recipes/ancient_tablet_craft
 
 execute if data block ~ ~ ~ Items[{Slot:10b}].components."minecraft:custom_data"{tablet_uses:0} run item modify block ~ ~ ~ container.10 {function:set_count,count:-1,add:true}
@@ -18,6 +19,7 @@ data remove storage rotp:discovery base_rarity
 data remove storage rotp:discovery target_word
 data remove storage rotp:discovery grid_words
 data remove storage rotp:discovery puzzle_active
+function rotp:active/table/discovery/clear_player_word_tag
 scoreboard players set @s clean_tablets_next_tick 1
 
 scoreboard players reset #dig_site_type temp

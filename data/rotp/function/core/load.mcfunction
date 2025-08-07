@@ -60,3 +60,4 @@ scoreboard objectives add runestone_id dummy
 
 scoreboard objectives add ingredient_hash dummy
 scoreboard objectives add result_slots_filled dummy
+scoreboard objectives add target_word_id dummy

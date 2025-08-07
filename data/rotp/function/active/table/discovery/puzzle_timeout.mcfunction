@@ -1,3 +1,4 @@
+
 data modify storage rotp:puzzle_game puzzle_active set value 0b
 title @p[distance=..10] actionbar [{"text":"Time's up! The ancient tablet crumbles to dust...","color":"red","bold":true}]
 item modify block ~ ~ ~ container.10 {function:set_count,count:-1,add:true}
@@ -17,4 +18,5 @@ data remove storage rotp:puzzle_game first_click
 data remove storage rotp:puzzle_game timer
 data remove storage rotp:puzzle_game type
 data remove storage rotp:puzzle_game piece_order
+function rotp:active/table/discovery/clear_player_word_tag
 scoreboard players reset @s puzzle_timer

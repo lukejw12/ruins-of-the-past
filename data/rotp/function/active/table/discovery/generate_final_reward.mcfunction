@@ -1,3 +1,4 @@
+
 function rotp:active/table/recipes/ancient_tablet_craft
 
 execute store result score #shatter_roll temp run random value 1..100
@@ -19,5 +20,6 @@ data remove storage rotp:discovery target_word
 data remove storage rotp:discovery grid_words
 data remove storage rotp:discovery puzzle_active
 
+function rotp:active/table/discovery/clear_player_word_tag
 scoreboard players set @s clean_tablets_next_tick 1
 scoreboard players reset #shatter_roll temp
