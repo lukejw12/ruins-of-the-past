@@ -15,14 +15,19 @@ execute if items block ~ ~ ~ container.11 *[custom_data~{berserker_rune:1b}] run
 function rotp:active/rune_table/get_rune_cost
 
 item modify block ~ ~ ~ container.4 {function:set_count,count:-1,add:true}
-
 item modify block ~ ~ ~ container.11 {function:set_count,count:-1,add:true}
 
-execute store result score #current_levels temp run data get block ~ ~ ~ Items[{Slot:15b}].components."minecraft:custom_data".stored_levels
-scoreboard players operation #current_levels temp -= #required_levels temp
-execute store result storage rotp:temp new_levels int 1 run scoreboard players get #current_levels temp
+execute store result score #current_points temp run data get block ~ ~ ~ Items[{Slot:15b}].components."minecraft:custom_data".stored_points
 
-function rotp:active/rune_table/update_transcriber_levels with storage rotp:temp
+scoreboard players operation #target_level temp = #required_levels temp
+function rotp:transcriber/conversion/levels_to_points
+scoreboard players operation #required_points temp = #output_points temp
 
-scoreboard players reset #current_levels temp
+scoreboard players operation #current_points temp -= #required_points temp
+execute store result storage rotp:temp new_points int 1 run scoreboard players get #current_points temp
+
+function rotp:active/rune_table/update_transcriber_points with storage rotp:temp
+
+scoreboard players reset #current_points temp
+scoreboard players reset #required_points temp
 scoreboard players reset #required_levels temp

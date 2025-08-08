@@ -2,13 +2,14 @@ $item modify entity @s weapon.mainhand {\
   function:"set_components",\
   components:{\
     "minecraft:lore":[\
-      {text:"Experience Levels Stored",color:"gray",italic:false},\
-      {text:"$(stored_levels)/150",color:"green",italic:false}\
+      {text:"Experience Points Stored",color:"gray",italic:false},\
+      {text:"$(stored_points) XP (≈$(display_levels) levels)",color:"green",italic:false},\
+      {text:"Capacity: 79095 XP (150 levels)",color:"dark_gray",italic:false}\
     ],\
     "minecraft:custom_data":{\
       transcriber:true,\
-      stored_levels:$(stored_levels),\
-      max_levels:150\
+      stored_points:$(stored_points),\
+      max_points:79095\
     }\
   }\
 }

@@ -20,13 +20,18 @@ $execute unless score #compatible temp matches 1 run function rotp:active/rune_t
 execute unless score #compatible temp matches 1 run scoreboard players reset #compatible temp
 execute unless score #compatible temp matches 1 run return 0
 
-execute store result score #transcriber_levels temp run data get block ~ ~ ~ Items[{Slot:15b}].components."minecraft:custom_data".stored_levels
+execute store result score #transcriber_points temp run data get block ~ ~ ~ Items[{Slot:15b}].components."minecraft:custom_data".stored_points
+
+scoreboard players operation #input_points temp = #transcriber_points temp
+function rotp:transcriber/conversion/points_to_levels
+scoreboard players operation #transcriber_levels temp = #output_levels temp
 
 function rotp:active/rune_table/get_rune_cost
 
 $execute if score #transcriber_levels temp >= #required_levels temp run function rotp:active/rune_table/show_sufficient_arrow {slot:$(slot)}
 $execute if score #transcriber_levels temp < #required_levels temp run function rotp:active/rune_table/show_insufficient_arrow {slot:$(slot)}
 
+scoreboard players reset #transcriber_points temp
 scoreboard players reset #transcriber_levels temp
 scoreboard players reset #required_levels temp
 scoreboard players reset #compatible temp
