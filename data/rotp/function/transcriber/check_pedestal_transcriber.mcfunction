@@ -1,0 +1,2 @@
+execute if data entity @s data.stored_item{components:{"minecraft:custom_data":{transcriber:true}}} unless data entity @s data.stored_item.components."minecraft:custom_data".stored_points run function rotp:transcriber/initialize_transcriber_data
+execute if data entity @s data.stored_item{components:{"minecraft:custom_data":{transcriber:true}}} run function rotp:transcriber/pedestal_tick

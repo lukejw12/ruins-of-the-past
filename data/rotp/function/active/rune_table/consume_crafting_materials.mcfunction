@@ -14,18 +14,26 @@ execute if items block ~ ~ ~ container.11 *[custom_data~{berserker_rune:1b}] run
 
 function rotp:active/rune_table/get_rune_cost
 
+tellraw @a[distance=..5] [{"text":"Rune cost: ","color":"yellow"},{"score":{"name":"#required_levels","objective":"temp"},"color":"white"},{"text":" levels","color":"yellow"}]
+
 item modify block ~ ~ ~ container.4 {function:set_count,count:-1,add:true}
 item modify block ~ ~ ~ container.11 {function:set_count,count:-1,add:true}
 
 execute store result score #current_points temp run data get block ~ ~ ~ Items[{Slot:15b}].components."minecraft:custom_data".stored_points
 
+tellraw @a[distance=..5] [{"text":"Transcriber has: ","color":"aqua"},{"score":{"name":"#current_points","objective":"temp"},"color":"white"},{"text":" points","color":"aqua"}]
+
 scoreboard players operation #target_level temp = #required_levels temp
 function rotp:transcriber/conversion/levels_to_points
 scoreboard players operation #required_points temp = #output_points temp
 
-scoreboard players operation #current_points temp -= #required_points temp
-execute store result storage rotp:temp new_points int 1 run scoreboard players get #current_points temp
+tellraw @a[distance=..5] [{"text":"Need: ","color":"red"},{"score":{"name":"#required_points","objective":"temp"},"color":"white"},{"text":" points","color":"red"}]
 
+scoreboard players operation #current_points temp -= #required_points temp
+
+tellraw @a[distance=..5] [{"text":"After consuming: ","color":"green"},{"score":{"name":"#current_points","objective":"temp"},"color":"white"},{"text":" points","color":"green"}]
+
+execute store result storage rotp:temp new_points int 1 run scoreboard players get #current_points temp
 function rotp:active/rune_table/update_transcriber_points with storage rotp:temp
 
 scoreboard players reset #current_points temp

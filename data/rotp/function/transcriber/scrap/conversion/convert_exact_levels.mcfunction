@@ -1,5 +1,3 @@
-scoreboard players operation #input_level temp = #target_level temp
-
 execute if score #input_level temp matches 0 run scoreboard players set #total_points_result temp 0
 execute if score #input_level temp matches 1 run scoreboard players set #total_points_result temp 7
 execute if score #input_level temp matches 2 run scoreboard players set #total_points_result temp 16
@@ -31,27 +29,5 @@ execute if score #input_level temp matches 27 run scoreboard players set #total_
 execute if score #input_level temp matches 28 run scoreboard players set #total_points_result temp 1186
 execute if score #input_level temp matches 29 run scoreboard players set #total_points_result temp 1288
 execute if score #input_level temp matches 30 run scoreboard players set #total_points_result temp 1395
-execute if score #input_level temp matches 31 run scoreboard players set #total_points_result temp 1507
-execute if score #input_level temp matches 32 run scoreboard players set #total_points_result temp 1628
-execute if score #input_level temp matches 33 run scoreboard players set #total_points_result temp 1758
-execute if score #input_level temp matches 34 run scoreboard players set #total_points_result temp 1897
-execute if score #input_level temp matches 35 run scoreboard players set #total_points_result temp 2045
-execute if score #input_level temp matches 36 run scoreboard players set #total_points_result temp 2202
-execute if score #input_level temp matches 37 run scoreboard players set #total_points_result temp 2368
-execute if score #input_level temp matches 38 run scoreboard players set #total_points_result temp 2543
-execute if score #input_level temp matches 39 run scoreboard players set #total_points_result temp 2727
-execute if score #input_level temp matches 40 run scoreboard players set #total_points_result temp 2920
-execute if score #input_level temp matches 41 run scoreboard players set #total_points_result temp 3122
-execute if score #input_level temp matches 42 run scoreboard players set #total_points_result temp 3333
-execute if score #input_level temp matches 43 run scoreboard players set #total_points_result temp 3553
-execute if score #input_level temp matches 44 run scoreboard players set #total_points_result temp 3782
-execute if score #input_level temp matches 45 run scoreboard players set #total_points_result temp 4020
-execute if score #input_level temp matches 46 run scoreboard players set #total_points_result temp 4267
-execute if score #input_level temp matches 47 run scoreboard players set #total_points_result temp 4523
-execute if score #input_level temp matches 48 run scoreboard players set #total_points_result temp 4788
-execute if score #input_level temp matches 49 run scoreboard players set #total_points_result temp 5062
-execute if score #input_level temp matches 50 run scoreboard players set #total_points_result temp 5345
 
-execute if score #input_level temp matches 51.. run function rotp:transcriber/conversion/calculate_high_levels_formula
-
-scoreboard players operation #output_points temp = #total_points_result temp
+execute if score #input_level temp matches 31.. run function rotp:transcriber/conversion/convert_high_level_to_points_exact

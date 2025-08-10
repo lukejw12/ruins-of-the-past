@@ -1,1 +1,5 @@
-$item replace block ~ ~ ~ container.13 with stone[item_name={text:"Will Consume $(required_levels) Levels from Transcriber",color:"green"},item_model="rotp:gui_elements/down_arrow",custom_data={gui_filler:1b,arrow_slot:1b,can_craft:1b}]
+$scoreboard players set #target_level temp $(required_levels)
+function rotp:transcriber/conversion/levels_to_points
+execute store result storage rotp:temp required_points int 1 run scoreboard players get #output_points temp
+function rotp:active/rune_table/show_sufficient_points_arrow with storage rotp:temp
+scoreboard players reset #target_level temp

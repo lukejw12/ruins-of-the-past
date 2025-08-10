@@ -1,0 +1,1 @@
+$item replace block ~ ~ ~ container.$(slot) with stone[item_name={text:"Requires $(required_points) Points",color:"red"},item_model="rotp:gui_elements/incompatible",custom_data={gui_filler:1b,arrow_slot:1b}]

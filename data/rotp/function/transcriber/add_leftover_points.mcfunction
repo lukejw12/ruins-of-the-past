@@ -1,1 +1,0 @@
-$execute if score #leftover_points temp matches 1.. run experience add @s $(leftover_points) points

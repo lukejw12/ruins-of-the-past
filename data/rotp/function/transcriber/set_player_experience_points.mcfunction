@@ -1,1 +1,0 @@
-$experience add @s $(give_points) points

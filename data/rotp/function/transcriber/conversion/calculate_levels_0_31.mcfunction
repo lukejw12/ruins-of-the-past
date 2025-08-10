@@ -30,3 +30,4 @@ execute if score #test_points temp matches 1186..1287 run scoreboard players set
 execute if score #test_points temp matches 1288..1394 run scoreboard players set #calculated_levels temp 29
 execute if score #test_points temp matches 1395..1506 run scoreboard players set #calculated_levels temp 30
 execute if score #test_points temp matches 1507..1627 run scoreboard players set #calculated_levels temp 31
+execute if score #test_points temp matches 1628.. run scoreboard players set #calculated_levels temp 32
